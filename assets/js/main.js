@@ -28,28 +28,63 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. Hero Swiper Slider
-  if (document.querySelector('.hero-swiper')) {
-    new Swiper('.hero-swiper', {
-      loop: true,
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true
-      },
-      speed: 1000,
-      autoplay: {
-        delay: 6000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: '.hero-pagination',
-        clickable: true
-      },
-      navigation: {
-        nextEl: '.hero-next',
-        prevEl: '.hero-prev'
+  // 3. Hero Background Slider
+  const heroSlider = document.querySelector('.hero-swiper');
+  if (heroSlider) {
+    const slides = Array.from(heroSlider.querySelectorAll('.swiper-slide'));
+    const prevBtn = heroSlider.querySelector('.hero-prev');
+    const nextBtn = heroSlider.querySelector('.hero-next');
+    const pagination = heroSlider.querySelector('.hero-pagination');
+
+    if (slides.length > 0) {
+      let activeIndex = 0;
+
+      const setActiveSlide = function (index) {
+        activeIndex = (index + slides.length) % slides.length;
+
+        slides.forEach(function (slide, slideIndex) {
+          slide.classList.toggle('swiper-slide-active', slideIndex === activeIndex);
+        });
+
+        if (pagination) {
+          const dots = pagination.querySelectorAll('span');
+          dots.forEach(function (dot, dotIndex) {
+            dot.classList.toggle('is-active', dotIndex === activeIndex);
+          });
+        }
+      };
+
+      if (pagination) {
+        slides.forEach(function () {
+          const dot = document.createElement('span');
+          dot.setAttribute('aria-label', 'Go to slide');
+          pagination.appendChild(dot);
+        });
       }
-    });
+
+      setActiveSlide(0);
+
+      prevBtn && prevBtn.addEventListener('click', function () {
+        setActiveSlide(activeIndex - 1);
+      });
+
+      nextBtn && nextBtn.addEventListener('click', function () {
+        setActiveSlide(activeIndex + 1);
+      });
+
+      if (pagination) {
+        const dots = pagination.querySelectorAll('span');
+        dots.forEach(function (dot, dotIndex) {
+          dot.addEventListener('click', function () {
+            setActiveSlide(dotIndex);
+          });
+        });
+      }
+
+      setInterval(function () {
+        setActiveSlide(activeIndex + 1);
+      }, 6000);
+    }
   }
 
   // 4. Clients Logo Continuous Marquee Slider
@@ -78,7 +113,11 @@ document.addEventListener('DOMContentLoaded', function () {
       loop: true,
       slidesPerView: 1,
       spaceBetween: 24,
-      speed: 800,
+      speed: 700,
+      grabCursor: true,
+      observer: true,
+      observeParents: true,
+      allowTouchMove: true,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false

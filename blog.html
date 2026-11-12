@@ -1,284 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UAE Business Blog & Regulatory Guides | Quick Express</title>
-  <meta name="description" content="Expert insights on UAE business setup, mainland vs free zone comparisons, 9% corporate tax regulations, and company formation advice in Dubai.">
-   <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+  <title>UAE Business Insights &amp; Legal Guides | Quick Express Blog</title>
+  <meta name="description"
+    content="Authoritative articles, compliance breakdowns, and practical guidance on UAE company formation, corporate tax, banking and visas from Quick Express advisors.">
 
-  <!-- Google Fonts -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-  <!-- Bootstrap 5.3.3 & Icons -->
+  <!-- Bootstrap 5.3.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome 6.5 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
-  <!-- Top Bar -->
-  <div class="top-bar d-none d-lg-block">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-8">
-          <span class="top-bar-item"><i class="bi bi-geo-alt-fill"></i> Level 12, Rolex Tower, Sheikh Zayed Road, Dubai, UAE</span>
-          <span class="top-bar-item ms-4"><i class="bi bi-telephone-fill"></i> <a href="tel:+97141234567">+971 4 123 4567</a></span>
-        </div>
-        <div class="col-md-4 text-end">
-          <span class="top-bar-item"><i class="bi bi-envelope-fill"></i> <a href="mailto:info@quickexpress.ae">info@quickexpress.ae</a></span>
-        </div>
+<body class="ap-body">
+
+  <!-- ================= TOP UTILITY BAR ================= -->
+  <div class="ap-topbar d-none d-lg-block">
+    <div class="container d-flex align-items-center justify-content-between">
+      <span><i class="bi bi-geo-alt"></i> Office #312, Shaikh Mahra Building, Al Twar, Al Qusais, Dubai, UAE</span>
+      <div class="d-flex align-items-center gap-4">
+        <a href="mailto:info@quickexpress.ae"><i class="bi bi-envelope"></i> info@quickexpress.ae</a>
+        <a href="tel:043346911"><i class="bi bi-telephone"></i> 04 3346 911</a>
+        <a href="tel:+971504842101"><i class="bi bi-phone"></i> 00971 504 842 101</a>
       </div>
     </div>
   </div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/logo-darck.png" alt="Quick Express Logo" class="navbar-brand-logo">
+  <!-- ================= STICKY WHITE HEADER ================= -->
+  <header class="ap-header" id="apHeader">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="ap-logo">
+        <img src="assets/images/logo-darck.png" alt="Quick Express">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBlog">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarBlog">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="offers.html">Special Offers</a></li>
-          <li class="nav-item"><a class="nav-link active" href="blog.html">UAE Guides & Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="nav-cta-btn d-none d-lg-block">
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultationModal">
-            <i class="bi bi-calendar2-check"></i> Free Consultation
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Page Hero Header -->
-  <header class="page-hero-header">
-    <div class="container position-relative" style="z-index: 2;">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-custom">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Blog & Insights</li>
-        </ol>
+      <nav class="d-none d-lg-block" aria-label="Main navigation">
+        <ul class="ap-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </nav>
-      <span class="badge-tag badge-dark mb-2"><i class="bi bi-journal-text"></i> Regulatory Knowledge Hub</span>
-      <h1 class="display-5 fw-bold text-white mb-2">UAE Business Insights & Legal Guides</h1>
-      <p class="lead text-light opacity-75 max-w-700">Authoritative articles, compliance breakdowns, and practical guidance from Dubai’s seasoned corporate advisors.</p>
+
+      <div class="d-flex align-items-center gap-2">
+        <button class="ap-btn ap-btn-primary d-none d-sm-inline-flex" data-bs-toggle="modal"
+          data-bs-target="#consultationModal">
+          <i class="bi bi-calendar2-check"></i> Get Free Consultation
+        </button>
+        <button class="ap-burger d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenuOffcanvas" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Blog Listing -->
-  <section class="section-padding bg-light-soft">
+  <main>
+
+    <!-- ================= BLOG BANNER ================= -->
+    <section class="sv-banner bl-banner">
+      <span class="sv-banner-grid" aria-hidden="true"></span>
+      <span class="sv-banner-ring" aria-hidden="true"></span>
+      <span class="sv-banner-glow" aria-hidden="true"></span>
+      <div class="container position-relative">
+        <div class="row g-4 align-items-end">
+          <div class="col-lg-7">
+            <nav aria-label="breadcrumb">
+              <ol class="sv-banner-crumbs">
+                <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+                <li aria-current="page">Blog &amp; Insights</li>
+              </ol>
+            </nav>
+            <span class="sv-banner-tag"><i class="bi bi-journal-text"></i> Regulatory Knowledge Hub</span>
+            <h1 class="sv-banner-title">UAE Business Insights &amp; <span>Legal Guides</span></h1>
+            <p class="sv-banner-text">Authoritative articles, compliance breakdowns, and practical guidance from Dubai’s seasoned corporate advisors.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="bl-search">
+              <i class="bi bi-search"></i>
+              <input type="search" id="blSearch" class="form-control" placeholder="Search guides, e.g. corporate tax" aria-label="Search articles">
+            </div>
+            <div class="bl-topics">
+              <span>Popular:</span>
+              <button type="button" data-jump="formation">Formation</button>
+              <button type="button" data-jump="tax">Corporate Tax</button>
+              <button type="button" data-jump="immigration">Golden Visa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED ARTICLE ================= -->
+    <section class="bl-section">
+      <div class="container">
+        <article class="bl-featured" data-aos="fade-up">
+          <a href="blog-details.html" class="bl-featured-media">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" alt="Dubai Business Setup 2026">
+            <span class="bl-featured-flag"><i class="bi bi-star-fill"></i> Featured Guide</span>
+          </a>
+          <div class="bl-featured-body">
+            <span class="bl-cat">Formation</span>
+            <div class="bl-meta">
+              <span><i class="bi bi-calendar3"></i> Nov 05, 2026</span>
+              <span><i class="bi bi-clock"></i> 6 min read</span>
+            </div>
+            <h2><a href="blog-details.html">How to Start a Business in Dubai: The Complete 2026 Guide for Expats</a></h2>
+            <p>Everything international entrepreneurs need to know about setting up a business in Dubai, from 100% foreign ownership regulations to choosing between Mainland and Free Zone.</p>
+            <div class="bl-featured-foot">
+              <div class="bl-author">
+                <span class="bl-author-logo"><img src="assets/images/logo-icon.png" alt=""></span>
+                <div><strong>Quick Express Advisory</strong><small>Corporate Setup Team</small></div>
+              </div>
+              <a href="blog-details.html" class="aa-btn aa-btn-teal">Read Full Guide <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Filter -->
+        <div class="bl-filter-row" data-aos="fade-up">
+          <div>
+            <span class="aa-eyebrow">Latest Articles</span>
+            <h2 class="aa-h2 mb-0">Explore Our Guides</h2>
+          </div>
+          <div class="sv-filter bl-filter" id="blFilter">
+            <button class="active" data-cat="all">All</button>
+            <button data-cat="tax">Corporate Tax</button>
+            <button data-cat="jurisdictions">Jurisdictions</button>
+            <button data-cat="banking">Banking</button>
+            <button data-cat="immigration">Immigration</button>
+            <button data-cat="legal">Legal</button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="blGrid">
+
+          <div class="col-md-6 col-lg-4 bl-item" data-cat="tax" data-aos="fade-up">
+            <article class="bl-card">
+              <a href="blog-details.html" class="bl-card-media">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=700&q=80" alt="UAE Corporate Tax 9%" loading="lazy">
+                <span class="bl-cat">Corporate Tax</span>
+              </a>
+              <div class="bl-card-body">
+                <div class="bl-meta"><span><i class="bi bi-calendar3"></i> Oct 28, 2026</span><span><i class="bi bi-clock"></i> 8 min read</span></div>
+                <h3><a href="blog-details.html">UAE Corporate Tax 9%: Everything SMEs and Free Zone Entities Need to Know</a></h3>
+                <p>Understand qualifying income rules, small business relief thresholds up to AED 3 million, and mandatory FTA registration deadlines to avoid severe penalties.</p>
+                <a href="blog-details.html" class="sv-card-link">Read Full Guide <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 bl-item" data-cat="jurisdictions" data-aos="fade-up" data-aos-delay="100">
+            <article class="bl-card">
+              <a href="blog-details.html" class="bl-card-media">
+                <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=700&q=80" alt="Mainland vs Free Zone" loading="lazy">
+                <span class="bl-cat">Jurisdictions</span>
+              </a>
+              <div class="bl-card-body">
+                <div class="bl-meta"><span><i class="bi bi-calendar3"></i> Oct 19, 2026</span><span><i class="bi bi-clock"></i> 5 min read</span></div>
+                <h3><a href="blog-details.html">Mainland vs Free Zone: Which Setup Option Best Fits Your UAE Business?</a></h3>
+                <p>Compare local market access, visa quotas, office space requirements, customs tariffs, and tax implications across UAE jurisdictions.</p>
+                <a href="blog-details.html" class="sv-card-link">Read Full Guide <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 bl-item" data-cat="banking" data-aos="fade-up" data-aos-delay="200">
+            <article class="bl-card">
+              <a href="blog-details.html" class="bl-card-media">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=700&q=80" alt="Corporate Banking UAE" loading="lazy">
+                <span class="bl-cat">Banking</span>
+              </a>
+              <div class="bl-card-body">
+                <div class="bl-meta"><span><i class="bi bi-calendar3"></i> Oct 11, 2026</span><span><i class="bi bi-clock"></i> 6 min read</span></div>
+                <h3><a href="blog-details.html">Navigating Corporate Bank Account Opening in Dubai: 5 Key Tips</a></h3>
+                <p>Why bank accounts get rejected in the UAE and how to prepare a watertight compliance profile with verified proof of business and source of funds.</p>
+                <a href="blog-details.html" class="sv-card-link">Read Full Guide <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 bl-item" data-cat="immigration" data-aos="fade-up">
+            <article class="bl-card">
+              <a href="blog-details.html" class="bl-card-media">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=700&q=80" alt="UAE Golden Visa" loading="lazy">
+                <span class="bl-cat">Immigration</span>
+              </a>
+              <div class="bl-card-body">
+                <div class="bl-meta"><span><i class="bi bi-calendar3"></i> Sep 29, 2026</span><span><i class="bi bi-clock"></i> 4 min read</span></div>
+                <h3><a href="blog-details.html">UAE 10-Year Golden Visa for Entrepreneurs: Eligibility &amp; Application Roadmap</a></h3>
+                <p>Learn how business owners, investors, and key executive professionals can secure long-term UAE residency for themselves and their immediate families.</p>
+                <a href="blog-details.html" class="sv-card-link">Read Full Guide <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 bl-item" data-cat="legal" data-aos="fade-up" data-aos-delay="100">
+            <article class="bl-card">
+              <a href="blog-details.html" class="bl-card-media">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=700&q=80" alt="Trademark UAE" loading="lazy">
+                <span class="bl-cat">Legal</span>
+              </a>
+              <div class="bl-card-body">
+                <div class="bl-meta"><span><i class="bi bi-calendar3"></i> Sep 18, 2026</span><span><i class="bi bi-clock"></i> 5 min read</span></div>
+                <h3><a href="blog-details.html">Why Registering Your Trademark in the UAE is Vital Before Launching</a></h3>
+                <p>Safeguard your company brand, domain, and proprietary assets against infringement across the UAE and GCC economic zone.</p>
+                <a href="blog-details.html" class="sv-card-link">Read Full Guide <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="sv-help-tile">
+              <span class="sv-help-icon"><i class="bi bi-chat-square-text"></i></span>
+              <h3>Have a question about your setup?</h3>
+              <p>Our advisors explain the rules that apply to your business in plain language, free of charge.</p>
+              <button class="aa-btn aa-btn-gold" data-bs-toggle="modal" data-bs-target="#consultationModal">Ask an Advisor <i class="bi bi-arrow-right"></i></button>
+              <a href="tel:+97141234567" class="sv-help-call"><i class="bi bi-telephone-fill"></i> +971 4 123 4567</a>
+            </div>
+          </div>
+
+        </div>
+        <p class="bl-empty" id="blEmpty" hidden><i class="bi bi-search"></i> No articles match your search.</p>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="bl-news-wrap">
+      <div class="container">
+        <div class="bl-news" data-aos="fade-up">
+          <span class="sv-banner-ring" aria-hidden="true"></span>
+          <div class="row g-4 align-items-center position-relative">
+            <div class="col-lg-6">
+              <span class="aa-eyebrow aa-eyebrow-light">Newsletter</span>
+              <h2>Get UAE business updates in your inbox</h2>
+              <p>New regulations, tax deadlines and setup guides, sent once a month.</p>
+            </div>
+            <div class="col-lg-6">
+              <form class="qe-ajax-form bl-news-form">
+                <i class="bi bi-envelope"></i>
+                <input type="email" class="form-control" placeholder="Enter your work email" aria-label="Email" required>
+                <button type="submit">Subscribe <i class="bi bi-send"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER (same as home page) ================= -->
+  <footer class="curved-modern-footer mt-5">
     <div class="container">
-      <div class="row g-4">
-        
-        <!-- Blog Item 1 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up">
-          <div class="blog-card">
-            <div class="blog-img-box">
-              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80" alt="Dubai Business Setup 2026">
-              <span class="blog-meta-badge">Formation</span>
-            </div>
-            <div class="blog-body">
-              <div class="blog-info-meta">
-                <span><i class="bi bi-calendar3"></i> Nov 05, 2026</span>
-                <span><i class="bi bi-clock"></i> 6 min read</span>
-              </div>
-              <h3 class="blog-title">
-                <a href="blog-details.html">How to Start a Business in Dubai: The Complete 2026 Guide for Expats</a>
-              </h3>
-              <p class="blog-snippet">
-                Everything international entrepreneurs need to know about setting up a business in Dubai, from 100% foreign ownership regulations to choosing between Mainland and Free Zone.
-              </p>
-              <a href="blog-details.html" class="service-link">Read Full Guide <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6">
+        <img src="assets/images/logo-darck.png" alt="Quick Express Logo" class="footer-logo mb-3">
+        <p class="footer-desc">
+          Quick Express Business Solutions is a premier corporate advisory and company formation consultancy based in
+          Rolex Tower, Sheikh Zayed Road, Dubai, UAE.
+        </p>
+      
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h4 class="footer-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="offers.html">Packages</a></li>
+          <li><a href="blog.html">Blog Guides</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-details.html?type=mainland">Mainland Company Setup</a></li>
+          <li><a href="service-details.html?type=freezone">Free Zone Incorporation</a></li>
+          <li><a href="service-details.html?type=tax">Corporate Tax & VAT 9%</a></li>
+          <li><a href="service-details.html?type=accounting">Accounting & Auditing</a></li>
+          <li><a href="service-details.html?type=banking">Corporate Bank Account</a></li>
+          <li><a href="service-details.html?type=pro">PRO & Golden Visas</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Headquarters</h4>
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt-fill text-info"></i>
+          <div>Level 12, Rolex Tower, Sheikh Zayed Road, Dubai, UAE</div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone-fill text-info"></i>
+          <div><a href="tel:+97141234567" class="text-white">+971 4 123 4567</a></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-envelope-fill text-info"></i>
+          <div><a href="mailto:info@quickexpress.ae" class="text-white">info@quickexpress.ae</a></div>
         </div>
 
-        <!-- Blog Item 2 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="blog-card">
-            <div class="blog-img-box">
-              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=700&q=80" alt="UAE Corporate Tax 9%">
-              <span class="blog-meta-badge">Corporate Tax</span>
-            </div>
-            <div class="blog-body">
-              <div class="blog-info-meta">
-                <span><i class="bi bi-calendar3"></i> Oct 28, 2026</span>
-                <span><i class="bi bi-clock"></i> 8 min read</span>
-              </div>
-              <h3 class="blog-title">
-                <a href="blog-details.html">UAE Corporate Tax 9%: Everything SMEs and Free Zone Entities Need to Know</a>
-              </h3>
-              <p class="blog-snippet">
-                Understand qualifying income rules, small business relief thresholds up to AED 3 million, and mandatory FTA registration deadlines to avoid severe penalties.
-              </p>
-              <a href="blog-details.html" class="service-link">Read Full Guide <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
+        <form class="footer-newsletter-input qe-ajax-form mt-3">
+          <input type="email" class="form-control" placeholder="Enter work email" required>
+          <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i
+              class="bi bi-arrow-right"></i></button>
+        </form>
         </div>
-
-        <!-- Blog Item 3 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="blog-card">
-            <div class="blog-img-box">
-              <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=700&q=80" alt="Mainland vs Free Zone">
-              <span class="blog-meta-badge">Jurisdictions</span>
-            </div>
-            <div class="blog-body">
-              <div class="blog-info-meta">
-                <span><i class="bi bi-calendar3"></i> Oct 19, 2026</span>
-                <span><i class="bi bi-clock"></i> 5 min read</span>
-              </div>
-              <h3 class="blog-title">
-                <a href="blog-details.html">Mainland vs Free Zone: Which Setup Option Best Fits Your UAE Business?</a>
-              </h3>
-              <p class="blog-snippet">
-                Compare local market access, visa quotas, office space requirements, customs tariffs, and tax implications across UAE jurisdictions.
-              </p>
-              <a href="blog-details.html" class="service-link">Read Full Guide <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog Item 4 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up">
-          <div class="blog-card">
-            <div class="blog-img-box">
-              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=700&q=80" alt="Corporate Banking UAE">
-              <span class="blog-meta-badge">Banking</span>
-            </div>
-            <div class="blog-body">
-              <div class="blog-info-meta">
-                <span><i class="bi bi-calendar3"></i> Oct 11, 2026</span>
-                <span><i class="bi bi-clock"></i> 6 min read</span>
-              </div>
-              <h3 class="blog-title">
-                <a href="blog-details.html">Navigating Corporate Bank Account Opening in Dubai: 5 Key Tips</a>
-              </h3>
-              <p class="blog-snippet">
-                Why bank accounts get rejected in the UAE and how to prepare a watertight compliance profile with verified proof of business and source of funds.
-              </p>
-              <a href="blog-details.html" class="service-link">Read Full Guide <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog Item 5 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="blog-card">
-            <div class="blog-img-box">
-              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=700&q=80" alt="UAE Golden Visa">
-              <span class="blog-meta-badge">Immigration</span>
-            </div>
-            <div class="blog-body">
-              <div class="blog-info-meta">
-                <span><i class="bi bi-calendar3"></i> Sep 29, 2026</span>
-                <span><i class="bi bi-clock"></i> 4 min read</span>
-              </div>
-              <h3 class="blog-title">
-                <a href="blog-details.html">UAE 10-Year Golden Visa for Entrepreneurs: Eligibility & Application Roadmap</a>
-              </h3>
-              <p class="blog-snippet">
-                Learn how business owners, investors, and key executive professionals can secure long-term UAE residency for themselves and their immediate families.
-              </p>
-              <a href="blog-details.html" class="service-link">Read Full Guide <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog Item 6 -->
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="blog-card">
-            <div class="blog-img-box">
-              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=700&q=80" alt="Trademark UAE">
-              <span class="blog-meta-badge">Legal</span>
-            </div>
-            <div class="blog-body">
-              <div class="blog-info-meta">
-                <span><i class="bi bi-calendar3"></i> Sep 18, 2026</span>
-                <span><i class="bi bi-clock"></i> 5 min read</span>
-              </div>
-              <h3 class="blog-title">
-                <a href="blog-details.html">Why Registering Your Trademark in the UAE is Vital Before Launching</a>
-              </h3>
-              <p class="blog-snippet">
-                Safeguard your company brand, domain, and proprietary assets against infringement across the UAE and GCC economic zone.
-              </p>
-              <a href="blog-details.html" class="service-link">Read Full Guide <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
-  </section>
 
-  <!-- WhatsApp Widget & Footer -->
-  <button class="wa-floating-btn" id="waToggleBtn" aria-label="Chat on WhatsApp"><div class="wa-pulse"></div><i class="fab fa-whatsapp"></i></button>
-  <div class="wa-chat-window" id="waChatWindow">
-    <div class="wa-header">
-      <div class="wa-header-agent">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80" alt="Consultant" class="wa-avatar">
-        <div>
-          <div class="wa-agent-title">Quick Express Support</div>
-          <div class="wa-agent-status"><span class="wa-status-dot"></span> Online</div>
-        </div>
-      </div>
-      <button class="wa-close-btn" id="waCloseBtn"><i class="bi bi-x-lg"></i></button>
-    </div>
-    <div class="wa-body">
-      <div class="wa-bubble"><p class="mb-0">Need advice on any of the topics covered in our guides?</p></div>
-    </div>
-    <div class="wa-footer">
-      <button class="wa-start-chat-btn" id="waStartChatBtn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</button>
-    </div>
-  </div>
-
-  <footer class="main-footer">
-    <div class="container text-center">
-      <img src="assets/images/logo.png" alt="Quick Express Logo" class="footer-logo mb-3">
-      <p class="text-muted small">&copy; 2026 Quick Express Business Solutions. All Rights Reserved. Level 12, Rolex Tower, Sheikh Zayed Road, Dubai, UAE.</p>
+    <div class="footer-bottom text-center">
+      &copy; 2026 Quick Express Business Solutions. All Rights Reserved.
     </div>
   </footer>
 
-  <!-- Modal -->
-  <div class="modal fade" id="consultationModal" tabindex="-1" aria-hidden="true">
+  <!-- ================= WHATSAPP CHAT WIDGET ================= -->
+  <button class="wa-floating-btn" id="waToggleBtn" aria-label="Chat with Quick Express on WhatsApp">
+    <div class="wa-pulse"></div>
+    <i class="fab fa-whatsapp"></i>
+  </button>
+
+  <div class="wa-chat-window" id="waChatWindow">
+    <div class="wa-header">
+      <div class="wa-header-agent">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80"
+          alt="Consultant" class="wa-avatar">
+        <div>
+          <div class="wa-agent-title">Quick Express Support</div>
+          <div class="wa-agent-status"><span class="wa-status-dot"></span> Online | Senior Advisor</div>
+        </div>
+      </div>
+      <button class="wa-close-btn" id="waCloseBtn" aria-label="Close Chat Window"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="wa-body">
+      <div class="wa-bubble">
+        <p class="mb-1">Hello! Welcome to <strong>Quick Express Business Solutions</strong>.</p>
+        <p class="mb-0">How can we assist you with your UAE company formation, taxes, or visa needs today?</p>
+        <div class="wa-bubble-time">Just now</div>
+      </div>
+      <div class="wa-quick-options">
+        <div class="wa-opt-chip" data-query="Hi, I would like to inquire about Dubai Free Zone setup."><i class="bi bi-globe2"></i> Free Zone Setup Package</div>
+        <div class="wa-opt-chip" data-query="Hello, I want to form a Mainland company in Dubai with 100% ownership."><i class="bi bi-building"></i> Mainland (DED) License</div>
+        <div class="wa-opt-chip" data-query="Hi, I need assistance with UAE Corporate Tax 9% and VAT."><i class="bi bi-calculator"></i> Corporate Tax &amp; VAT Support</div>
+        <div class="wa-opt-chip" data-query="Hello, can you help me open a Corporate Bank Account in the UAE?"><i class="bi bi-bank"></i> Corporate Bank Account</div>
+      </div>
+    </div>
+    <div class="wa-footer">
+      <div class="input-group mb-2">
+        <input type="text" id="waCustomMsg" class="form-control form-control-sm" placeholder="Type your inquiry...">
+      </div>
+      <button class="wa-start-chat-btn" id="waStartChatBtn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp Now</button>
+    </div>
+  </div>
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- ================= CONSULTATION MODAL ================= -->
+  <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content border-0 shadow-lg rounded-4">
         <div class="modal-header bg-gradient-teal text-white p-4">
-          <h5 class="modal-title fw-bold">Book Free Consultation</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          <h5 class="modal-title fw-bold" id="consultationModalLabel"><i class="bi bi-calendar2-check me-2"></i> Get Free Consultation</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-4">
           <form class="qe-ajax-form">
             <div class="row g-3">
-              <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required></div>
-              <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address" required></div>
-              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
               <div class="col-md-6">
-                <select class="form-select">
-                  <option>Mainland Company Setup</option>
-                  <option>Free Zone Company Formation</option>
-                  <option>Corporate Tax & VAT</option>
-                  <option>Corporate Banking</option>
+                <label class="form-label small fw-semibold">Full Name *</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Email Address *</label>
+                <input type="email" class="form-control" placeholder="you@company.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Phone / WhatsApp Number *</label>
+                <input type="tel" class="form-control" placeholder="+971 50 123 4567" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Service</label>
+                <select class="form-select" id="modalServiceSelect">
+                  <option value="mainland">New Company Formation &amp; License Renewal</option>
+                  <option value="sponsorship">Local Sponsorship Services</option>
+                  <option value="office">Private office for Rent in Dubai, UAE</option>
+                  <option value="virtual">Virtual Office, EJARI &amp; ESTIDAMA Services</option>
+                  <option value="pro">VISA Services</option>
+                  <option value="tax">VAT Registration &amp; Corporate Tax Registration</option>
+                  <option value="banking">Bank Account Opening</option>
                 </select>
               </div>
-              <div class="col-12"><textarea class="form-control" rows="3" placeholder="Tell us about your requirements..."></textarea></div>
+              <div class="col-12">
+                <label class="form-label small fw-semibold">Message</label>
+                <textarea class="form-control" id="modalNotes" rows="3"></textarea>
+              </div>
             </div>
             <div class="mt-4 text-end">
-              <button type="submit" class="btn btn-primary px-4">Submit</button>
+              <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary px-4"><i class="bi bi-send-fill me-1"></i> Get in Touch</button>
             </div>
           </form>
         </div>
@@ -286,9 +430,88 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+  <!-- ================= MOBILE NAVIGATION OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end ap-offcanvas" tabindex="-1" id="mobileMenuOffcanvas" aria-label="Mobile menu">
+    <div class="offcanvas-header">
+      <img src="assets/images/logo-darck.png" alt="Quick Express" style="height: 40px;">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="ap-mnav">
+        <li><a href="index.html">Home <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="about.html">About Us <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="services.html">Services <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="blog.html" class="active">Blog <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="offers.html">Offers <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="contact.html">Contact Us <i class="bi bi-chevron-right"></i></a></li>
+      </ul>
+      <button class="ap-btn ap-btn-primary w-100 justify-content-center mb-2" data-bs-toggle="modal"
+        data-bs-target="#consultationModal" data-bs-dismiss="offcanvas">Get Free Consultation</button>
+      <a href="tel:043346911" class="ap-btn ap-btn-outline w-100 justify-content-center"><i class="bi bi-telephone"></i> Call Now</a>
+    </div>
+  </div>
 
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom Main JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Sticky header shadow on scroll (About page)
+    (function () {
+      var header = document.getElementById('apHeader');
+      if (!header) return;
+      var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 20); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+
+  <!-- Blog search & filter -->
+  <script>
+    (function () {
+      var items = Array.prototype.slice.call(document.querySelectorAll('.bl-item'));
+      var buttons = document.querySelectorAll('#blFilter button');
+      var search = document.getElementById('blSearch');
+      var empty = document.getElementById('blEmpty');
+      var cat = 'all';
+      function apply() {
+        var q = (search.value || '').trim().toLowerCase();
+        var shown = 0;
+        items.forEach(function (el) {
+          var ok = (cat === 'all' || el.getAttribute('data-cat') === cat) &&
+                   (!q || el.textContent.toLowerCase().indexOf(q) !== -1);
+          el.style.display = ok ? '' : 'none';
+          if (ok) shown++;
+        });
+        empty.hidden = shown !== 0;
+      }
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          buttons.forEach(function (x) { x.classList.remove('active'); });
+          b.classList.add('active');
+          cat = b.getAttribute('data-cat');
+          apply();
+        });
+      });
+      search.addEventListener('input', function () {
+        if (search.value) document.getElementById('blGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        apply();
+      });
+      document.querySelectorAll('.bl-topics button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var target = b.getAttribute('data-jump');
+          if (target === 'formation') {
+            document.querySelector('.bl-featured').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+          }
+          var btn = document.querySelector('#blFilter button[data-cat="' + target + '"]');
+          if (btn) { btn.click(); document.getElementById('blFilter').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>

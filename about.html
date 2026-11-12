@@ -1,345 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Quick Express Business Solutions - Dubai, UAE</title>
-  <meta name="description" content="Discover Quick Express Business Solutions. Over 12 years of corporate excellence, 15,000+ businesses incorporated in Dubai & UAE.">
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
- 
-  <!-- Google Fonts -->
+  <title>About Us | Business Formation in UAE - Quick Express Business Solutions</title>
+  <meta name="description"
+    content="Quick Express Business Solutions is a team of business setup consultants in Dubai, UAE since 2016. Vision, mission, values and top services.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-  <!-- Bootstrap 5.3.3 & Icons -->
+  <!-- Bootstrap 5.3.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome 6.5 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
-  <!-- Top Bar -->
-  <div class="top-bar d-none d-lg-block">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-8">
-          <div class="d-flex align-items-center gap-4">
-            <span class="top-bar-item"><i class="bi bi-geo-alt-fill"></i> Level 12, Rolex Tower, Sheikh Zayed Road, Dubai, UAE</span>
-            <span class="top-bar-item"><i class="bi bi-clock-fill"></i> Mon - Sat: 8:30 AM - 6:30 PM</span>
-            <span class="top-bar-item"><i class="bi bi-telephone-fill"></i> <a href="tel:+97141234567">+971 4 123 4567</a></span>
-          </div>
-        </div>
-        <div class="col-md-4 text-end">
-          <div class="d-inline-flex align-items-center">
-            <span class="me-3 top-bar-item"><i class="bi bi-envelope-fill"></i> <a href="mailto:info@quickexpress.ae">info@quickexpress.ae</a></span>
-            <div class="top-bar-social d-inline-flex">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-            </div>
-          </div>
-        </div>
+<body class="ap-body">
+
+  <!-- ================= TOP UTILITY BAR ================= -->
+  <div class="ap-topbar d-none d-lg-block">
+    <div class="container d-flex align-items-center justify-content-between">
+      <span><i class="bi bi-geo-alt"></i> Office #312, Shaikh Mahra Building, Al Twar, Al Qusais, Dubai, UAE</span>
+      <div class="d-flex align-items-center gap-4">
+        <a href="mailto:info@quickexpress.ae"><i class="bi bi-envelope"></i> info@quickexpress.ae</a>
+        <a href="tel:043346911"><i class="bi bi-telephone"></i> 04 3346 911</a>
+        <a href="tel:+971504842101"><i class="bi bi-phone"></i> 00971 504 842 101</a>
       </div>
     </div>
   </div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/logo-darck.png" alt="Quick Express Logo" class="navbar-brand-logo">
+  <!-- ================= STICKY WHITE HEADER ================= -->
+  <header class="ap-header" id="apHeader">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="ap-logo">
+        <img src="assets/images/logo-darck.png" alt="Quick Express">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAbout" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarAbout">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDrop" role="button" data-bs-toggle="dropdown">Services</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-fill"></i> All Business Services</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="service-details.html?type=mainland"><i class="bi bi-building-check"></i> Mainland Company Formation</a></li>
-              <li><a class="dropdown-item" href="service-details.html?type=freezone"><i class="bi bi-globe-americas"></i> Free Zone Company Setup</a></li>
-              <li><a class="dropdown-item" href="service-details.html?type=tax"><i class="bi bi-calculator"></i> Corporate Tax & VAT</a></li>
-              <li><a class="dropdown-item" href="service-details.html?type=banking"><i class="bi bi-bank"></i> Corporate Banking</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="offers.html">Special Offers</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">UAE Guides & Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="nav-cta-btn d-none d-lg-block">
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultationModal">
-            <i class="bi bi-calendar2-check"></i> Free Consultation
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Page Hero Header -->
-  <header class="page-hero-header">
-    <div class="container position-relative" style="z-index: 2;">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-custom">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">About Us</li>
-        </ol>
+      <nav class="d-none d-lg-block" aria-label="Main navigation">
+        <ul class="ap-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </nav>
-      <h1 class="display-5 fw-bold text-white mb-2">About Quick Express Business Solutions</h1>
-      <p class="lead text-light opacity-75 max-w-700">Pioneering frictionless enterprise formation, financial advisory, and strategic corporate compliance in Dubai and the UAE since 2014.</p>
+
+      <div class="d-flex align-items-center gap-2">
+        <button class="ap-btn ap-btn-primary d-none d-sm-inline-flex" data-bs-toggle="modal"
+          data-bs-target="#consultationModal">
+          <i class="bi bi-calendar2-check"></i> Get Free Consultation
+        </button>
+        <button class="ap-burger d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenuOffcanvas" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Detailed Story Section -->
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6" data-aos="fade-right">
-          <span class="badge-tag"><i class="bi bi-award-fill"></i> Our Legacy & Vision</span>
-          <h2 class="section-title">Enabling Visionary Global Founders to Thrive in Dubai</h2>
-          <p class="text-muted">
-            Founded with a vision to eliminate administrative bottlenecks for foreign investors, <strong>Quick Express Business Solutions</strong> has grown from a boutique advisory into one of the UAE’s most recognized business setup and corporate services powerhouses.
-          </p>
-          <p class="text-muted">
-            Over the past 12+ years, we have empowered over 15,000 entrepreneurs from 75+ nations to establish their mainland, free zone, and offshore corporations. From high-growth tech scaleups in DMCC to industrial trading hubs on the Dubai Mainland, our client portfolio reflects the diverse, vibrant economic landscape of the Emirates.
-          </p>
-          <div class="row g-3 mt-2">
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center gap-3 p-3 bg-light-soft rounded-3 border">
-                <i class="bi bi-shield-check text-primary fs-2"></i>
+  <main>
+
+    <!-- ================= HERO (inset rounded card) ================= -->
+    <section class="aa-hero-wrap">
+      <div class="aa-hero">
+        <div class="aa-hero-overlay" aria-hidden="true"></div>
+        <div class="aa-hero-grid" aria-hidden="true"></div>
+        <div class="aa-hero-arc" aria-hidden="true"></div>
+        <div class="aa-hero-orb" aria-hidden="true"></div>
+        <div class="container position-relative">
+          <div class="aa-hero-copy" data-aos="fade-up">
+            <nav aria-label="breadcrumb">
+              <ol class="aa-crumbs">
+                <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+                <li aria-current="page">About Us</li>
+              </ol>
+            </nav>
+            <span class="aa-eyebrow aa-eyebrow-light">About Us</span>
+            <h1 class="aa-hero-title">Business Setup Consultants in Dubai, UAE <span>since 2016</span></h1>
+            <p class="aa-hero-text">
+              Quick Express Business Solutions is a team of business setup consultants in the UAE that firmly
+              believes in moving with the time.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="services.html" class="aa-btn aa-btn-gold">View Services <i class="bi bi-arrow-right"></i></a>
+              <button class="aa-btn aa-btn-glass" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                Get Free Consultation
+              </button>
+            </div>
+          </div>
+
+          <div class="aa-hero-stats" data-aos="fade-up" data-aos-delay="150">
+            <div class="aa-hs">
+              <span class="aa-hs-icon"><i class="bi bi-people"></i></span>
+              <i class="bi bi-people aa-hs-mark" aria-hidden="true"></i>
+              <div>
+                <div class="aa-hs-num"><span class="counter-val" data-target="2500">2,500</span><em>+</em></div>
+                <div class="aa-hs-label">Customers</div>
+              </div>
+            </div>
+            <div class="aa-hs aa-hs-feature">
+              <span class="aa-hs-icon"><i class="bi bi-clipboard2-check"></i></span>
+              <i class="bi bi-clipboard2-check aa-hs-mark" aria-hidden="true"></i>
+              <div>
+                <div class="aa-hs-num"><span class="counter-val" data-target="5000">5,000</span><em>+</em></div>
+                <div class="aa-hs-label">Audits Completed</div>
+              </div>
+            </div>
+            <div class="aa-hs">
+              <span class="aa-hs-icon"><i class="bi bi-person-badge"></i></span>
+              <i class="bi bi-person-badge aa-hs-mark" aria-hidden="true"></i>
+              <div>
+                <div class="aa-hs-num"><span class="counter-val" data-target="100">100</span><em>+</em></div>
+                <div class="aa-hs-label">Dedicated Team</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STORY ================= -->
+    <section class="aa-story">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <span class="aa-eyebrow">About Us</span>
+            <h2 class="aa-h2">Quick Express Business Solutions</h2>
+            <p class="aa-text">
+              Quick Express Business Solutions is a team of business setup consultants in the UAE that firmly
+              believes in moving with the time. We stay updated with the latest laws governing the UAE business
+              landscape as well as company registration in the UAE to assure you that you are in touch with the right
+              business consultant in the UAE and other emirates.
+            </p>
+            <div class="aa-callout">
+              <span class="aa-callout-icon"><i class="bi bi-hand-thumbs-up"></i></span>
+              <p>In this way, your dream of business setup in the UAE is in the right hands.</p>
+            </div>
+            <a href="services.html" class="aa-btn aa-btn-teal">View Services <i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="aa-story-media">
+              <span class="aa-dots" aria-hidden="true"></span>
+              <span class="aa-vertical" aria-hidden="true">since 2016</span>
+              <div class="aa-story-frame">
+                <img src="assets/images/about-story-main.png"
+                  alt="Quick Express business setup consultant meeting a client in Dubai" class="aa-story-img">
+                <span class="aa-story-shine" aria-hidden="true"></span>
+              </div>
+              <div class="aa-story-sub">
+                <img src="assets/images/about-story-sub.png" alt="Dubai skyline at sunset" loading="lazy">
+              </div>
+              <div class="aa-story-card">
+                <span class="aa-story-card-icon"><img src="assets/images/logo-icon.png" alt=""></span>
                 <div>
-                  <h6 class="fw-bold mb-0">100% Legal Security</h6>
-                  <small class="text-muted">Fully certified & insured</small>
+                  <strong>Business Setup Consultants in Dubai, UAE</strong>
+                  <span>since 2016</span>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="d-flex align-items-center gap-3 p-3 bg-light-soft rounded-3 border">
-                <i class="bi bi-clock-history text-primary fs-2"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUR VALUES ================= -->
+    <section class="aa-values">
+      <div class="container">
+        <div class="aa-head" data-aos="fade-up">
+          <span class="aa-eyebrow">Values</span>
+          <h2 class="aa-h2">Our Values</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="aa-value">
+              <div class="aa-value-top">
+                <span class="aa-value-icon"><i class="bi bi-person-heart"></i></span>
+                <span class="aa-value-num">01</span>
+              </div>
+              <h3>Client Focus</h3>
+              <span class="aa-value-rule" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="aa-value">
+              <div class="aa-value-top">
+                <span class="aa-value-icon"><i class="bi bi-shield-check"></i></span>
+                <span class="aa-value-num">02</span>
+              </div>
+              <h3>Integrity</h3>
+              <span class="aa-value-rule" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="aa-value">
+              <div class="aa-value-top">
+                <span class="aa-value-icon"><i class="bi bi-people"></i></span>
+                <span class="aa-value-num">03</span>
+              </div>
+              <h3>Collaboration</h3>
+              <span class="aa-value-rule" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="aa-value">
+              <div class="aa-value-top">
+                <span class="aa-value-icon"><i class="bi bi-award"></i></span>
+                <span class="aa-value-num">04</span>
+              </div>
+              <h3>Quality Service</h3>
+              <span class="aa-value-rule" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VISION & MISSION (banner + cards board) ================= -->
+    <section class="aa-vm">
+      <div class="container position-relative">
+        <div class="aa-head" data-aos="fade-up">
+          <span class="aa-eyebrow">Top Services</span>
+          <h2 class="aa-h2">Business Setup Consultants in Dubai, UAE</h2>
+        </div>
+
+        <div class="aa-vm-board">
+          <!-- Cinematic banner -->
+          <div class="aa-vm-banner" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80"
+              alt="Business towers in Dubai">
+            <div class="aa-vm-banner-shade" aria-hidden="true"></div>
+            <div class="aa-vm-banner-bar">
+              <div class="aa-vm-chip">
+                <span class="aa-vm-chip-logo"><img src="assets/images/logo-icon.png" alt=""></span>
                 <div>
-                  <h6 class="fw-bold mb-0">Accelerated Timelines</h6>
-                  <small class="text-muted">Licenses in 24-48 hrs</small>
+                  <small>Quick Express Business Solutions</small>
+                  <strong>since 2016</strong>
                 </div>
               </div>
+              <a href="services.html" class="aa-btn aa-btn-gold">View Services <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left">
-          <div class="position-relative">
-            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80" alt="Quick Express Advisory Team" class="rounded-4 shadow-lg w-100" style="height: 440px; object-fit: cover;">
+
+          <!-- Cards -->
+          <div class="aa-vm-cards">
+            <article class="aa-vm-card" data-aos="fade-up" data-aos-delay="0">
+              <span class="aa-vm-card-num" aria-hidden="true">01</span>
+              <span class="aa-vm-medal"><i class="bi bi-eye"></i></span>
+              <h3>Vision</h3>
+              <p>Take on responsibility and be confident to provide the best possible service for our clients.</p>
+            </article>
+
+            <article class="aa-vm-card aa-vm-card-feature" data-aos="fade-up" data-aos-delay="120">
+              <span class="aa-vm-card-num" aria-hidden="true">02</span>
+              <span class="aa-vm-medal"><i class="bi bi-bullseye"></i></span>
+              <h3>Mission</h3>
+              <p>Blending insight, strategy, dedication and imagination, we help clients to explore and act on opportunity.</p>
+            </article>
+
+            <article class="aa-vm-card" data-aos="fade-up" data-aos-delay="240">
+              <span class="aa-vm-card-num" aria-hidden="true">03</span>
+              <span class="aa-vm-medal"><i class="bi bi-gem"></i></span>
+              <h3>Values</h3>
+              <ul class="aa-vm-values">
+                <li>Client Focus</li>
+                <li>Integrity</li>
+                <li>Collaboration</li>
+                <li>Quality Service</li>
+              </ul>
+            </article>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Vision, Mission & Values In Depth -->
-  <section class="section-padding bg-light-soft">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <span class="badge-tag"><i class="bi bi-compass"></i> Foundation of Our Excellence</span>
-        <h2 class="section-title">Our Strategic Corporate Pillars</h2>
-        <p class="section-subtitle">Guiding every client consultation, corporate filing, and strategic partnership across the UAE.</p>
-      </div>
+  </main>
 
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="vmv-card">
-            <div class="vmv-icon vision"><i class="bi bi-eye-fill"></i></div>
-            <h3 class="vmv-title">Corporate Vision</h3>
-            <p class="vmv-text">To be the Middle East’s preeminent gateway for international commerce, recognized globally for setting benchmarks in speed, transparent regulatory compliance, and holistic enterprise empowerment.</p>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="vmv-card">
-            <div class="vmv-icon mission"><i class="bi bi-bullseye"></i></div>
-            <h3 class="vmv-title">Corporate Mission</h3>
-            <p class="vmv-text">To deliver end-to-end, worry-free business formation, licensing, corporate tax adherence, and banking enablement through an agile, multilingual team leveraging cutting-edge digital portals.</p>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="vmv-card">
-            <div class="vmv-icon values"><i class="bi bi-gem"></i></div>
-            <h3 class="vmv-title">Uncompromising Values</h3>
-            <p class="vmv-text">Integrity above all. We practice 100% price transparency with zero hidden government surcharges, absolute confidentiality with client assets, and proactive dedication to our clients' continuous growth.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Leadership Team -->
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <span class="badge-tag"><i class="bi bi-people-fill"></i> Advisory Leadership</span>
-        <h2 class="section-title">Meet Our Senior Corporate Advisors</h2>
-        <p class="section-subtitle">Decades of collective experience spanning UAE commercial law, corporate taxation, and banking compliance.</p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Tariq Al-Mansoor" class="card-img-top" style="height: 260px; object-fit: cover;">
-            <div class="card-body p-4">
-              <h5 class="fw-bold mb-1">Tariq Al-Mansoor</h5>
-              <div class="text-primary small fw-semibold mb-2">Managing Director & Founder</div>
-              <p class="text-muted small">18+ years navigating UAE Department of Economy & Tourism (DET) and Free Zone frameworks.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
-          <div class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Soraya Jenkins" class="card-img-top" style="height: 260px; object-fit: cover;">
-            <div class="card-body p-4">
-              <h5 class="fw-bold mb-1">Soraya Jenkins</h5>
-              <div class="text-primary small fw-semibold mb-2">Head of Free Zone Formations</div>
-              <p class="text-muted small">Specialist in DMCC, IFZA, and Meydan fast-track setups with over 4,000 licenses issued.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Farhan Siddiqui" class="card-img-top" style="height: 260px; object-fit: cover;">
-            <div class="card-body p-4">
-              <h5 class="fw-bold mb-1">Farhan Siddiqui, FCA</h5>
-              <div class="text-primary small fw-semibold mb-2">Lead Tax & Audit Partner</div>
-              <p class="text-muted small">Certified chartered accountant with extensive expertise in Federal Tax Authority (FTA) 9% Corporate Tax.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
-          <div class="card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
-            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&q=80" alt="Layla Al-Hashimi" class="card-img-top" style="height: 260px; object-fit: cover;">
-            <div class="card-body p-4">
-              <h5 class="fw-bold mb-1">Layla Al-Hashimi</h5>
-              <div class="text-primary small fw-semibold mb-2">Director of Banking & PRO</div>
-              <p class="text-muted small">Former compliance officer with direct executive liaisons across Emirates NBD, Mashreq, and ADCB.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Strip -->
-  <section class="section-padding bg-gradient-teal text-white text-center">
-    <div class="container">
-      <h2 class="display-6 fw-bold mb-3">Ready to Discuss Your UAE Venture?</h2>
-      <p class="lead opacity-75 mb-4 max-w-700 mx-auto">Book a private consultation with our senior advisory team at Rolex Tower or online via video conference.</p>
-      <div class="d-flex justify-content-center gap-3">
-        <button class="btn btn-gold btn-lg" data-bs-toggle="modal" data-bs-target="#consultationModal">
-          <i class="bi bi-calendar2-check"></i> Book Strategy Session
-        </button>
-        <a href="tel:+97141234567" class="btn btn-outline-white btn-lg">
-          <i class="bi bi-telephone"></i> +971 4 123 4567
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WhatsApp Widget & Footer (same standard) -->
-  <button class="wa-floating-btn" id="waToggleBtn" aria-label="Chat on WhatsApp"><div class="wa-pulse"></div><i class="fab fa-whatsapp"></i></button>
-  <div class="wa-chat-window" id="waChatWindow">
-    <div class="wa-header">
-      <div class="wa-header-agent">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80" alt="Consultant" class="wa-avatar">
-        <div>
-          <div class="wa-agent-title">Quick Express Support</div>
-          <div class="wa-agent-status"><span class="wa-status-dot"></span> Online</div>
-        </div>
-      </div>
-      <button class="wa-close-btn" id="waCloseBtn"><i class="bi bi-x-lg"></i></button>
-    </div>
-    <div class="wa-body">
-      <div class="wa-bubble"><p class="mb-0">Hello! Inquiring about our corporate services or company setup?</p></div>
-      <div class="wa-quick-options">
-        <div class="wa-opt-chip" data-query="Hi, I want more information about Quick Express services."><i class="bi bi-info-circle text-primary"></i> Company Services</div>
-        <div class="wa-opt-chip" data-query="Hello, I want to book an appointment at your Rolex Tower office."><i class="bi bi-geo-alt text-primary"></i> Visit Office</div>
-      </div>
-    </div>
-    <div class="wa-footer">
-      <button class="wa-start-chat-btn" id="waStartChatBtn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</button>
-    </div>
-  </div>
-
-  <!-- Standard Footer -->
-  <footer class="main-footer">
+  <!-- ================= FOOTER (same as home page) ================= -->
+  <footer class="curved-modern-footer mt-5">
     <div class="container">
       <div class="row g-4 mb-5">
         <div class="col-lg-4 col-md-6">
-          <img src="assets/images/logo.png" alt="Quick Express Logo" class="footer-logo">
-          <p class="footer-desc">Quick Express Business Solutions is a premier corporate advisory and business formation consultancy in Dubai, UAE.</p>
+        <img src="assets/images/logo-darck.png" alt="Quick Express Logo" class="footer-logo mb-3">
+        <p class="footer-desc">
+          Quick Express Business Solutions is a premier corporate advisory and company formation consultancy based in
+          Rolex Tower, Sheikh Zayed Road, Dubai, UAE.
+        </p>
+      
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h4 class="footer-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="offers.html">Packages</a></li>
+          <li><a href="blog.html">Blog Guides</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-details.html?type=mainland">Mainland Company Setup</a></li>
+          <li><a href="service-details.html?type=freezone">Free Zone Incorporation</a></li>
+          <li><a href="service-details.html?type=tax">Corporate Tax & VAT 9%</a></li>
+          <li><a href="service-details.html?type=accounting">Accounting & Auditing</a></li>
+          <li><a href="service-details.html?type=banking">Corporate Bank Account</a></li>
+          <li><a href="service-details.html?type=pro">PRO & Golden Visas</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Headquarters</h4>
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt-fill text-info"></i>
+          <div>Level 12, Rolex Tower, Sheikh Zayed Road, Dubai, UAE</div>
         </div>
-        <div class="col-lg-2 col-md-6">
-          <h4 class="footer-title">Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="offers.html">Offers</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone-fill text-info"></i>
+          <div><a href="tel:+97141234567" class="text-white">+971 4 123 4567</a></div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <h4 class="footer-title">Services</h4>
-          <ul class="footer-links">
-            <li><a href="service-details.html?type=mainland">Mainland Setup</a></li>
-            <li><a href="service-details.html?type=freezone">Free Zone Setup</a></li>
-            <li><a href="service-details.html?type=tax">Corporate Tax</a></li>
-            <li><a href="service-details.html?type=banking">Bank Account</a></li>
-          </ul>
+        <div class="footer-contact-item">
+          <i class="bi bi-envelope-fill text-info"></i>
+          <div><a href="mailto:info@quickexpress.ae" class="text-white">info@quickexpress.ae</a></div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <h4 class="footer-title">Contact</h4>
-          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> Level 12, Rolex Tower, Sheikh Zayed Road, Dubai</div>
-          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i> +971 4 123 4567</div>
-          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i> info@quickexpress.ae</div>
+
+        <form class="footer-newsletter-input qe-ajax-form mt-3">
+          <input type="email" class="form-control" placeholder="Enter work email" required>
+          <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i
+              class="bi bi-arrow-right"></i></button>
+        </form>
         </div>
       </div>
-      <div class="footer-bottom text-center">
-        &copy; 2026 Quick Express Business Solutions. All Rights Reserved.
-      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      &copy; 2026 Quick Express Business Solutions. All Rights Reserved.
     </div>
   </footer>
 
-  <!-- Modal -->
-  <div class="modal fade" id="consultationModal" tabindex="-1" aria-hidden="true">
+  <!-- ================= WHATSAPP CHAT WIDGET ================= -->
+  <button class="wa-floating-btn" id="waToggleBtn" aria-label="Chat with Quick Express on WhatsApp">
+    <div class="wa-pulse"></div>
+    <i class="fab fa-whatsapp"></i>
+  </button>
+
+  <div class="wa-chat-window" id="waChatWindow">
+    <div class="wa-header">
+      <div class="wa-header-agent">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80"
+          alt="Consultant" class="wa-avatar">
+        <div>
+          <div class="wa-agent-title">Quick Express Support</div>
+          <div class="wa-agent-status"><span class="wa-status-dot"></span> Online | Senior Advisor</div>
+        </div>
+      </div>
+      <button class="wa-close-btn" id="waCloseBtn" aria-label="Close Chat Window"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="wa-body">
+      <div class="wa-bubble">
+        <p class="mb-1">Hello! Welcome to <strong>Quick Express Business Solutions</strong>.</p>
+        <p class="mb-0">How can we assist you with your UAE company formation, taxes, or visa needs today?</p>
+        <div class="wa-bubble-time">Just now</div>
+      </div>
+      <div class="wa-quick-options">
+        <div class="wa-opt-chip" data-query="Hi, I would like to inquire about Dubai Free Zone setup."><i class="bi bi-globe2"></i> Free Zone Setup Package</div>
+        <div class="wa-opt-chip" data-query="Hello, I want to form a Mainland company in Dubai with 100% ownership."><i class="bi bi-building"></i> Mainland (DED) License</div>
+        <div class="wa-opt-chip" data-query="Hi, I need assistance with UAE Corporate Tax 9% and VAT."><i class="bi bi-calculator"></i> Corporate Tax &amp; VAT Support</div>
+        <div class="wa-opt-chip" data-query="Hello, can you help me open a Corporate Bank Account in the UAE?"><i class="bi bi-bank"></i> Corporate Bank Account</div>
+      </div>
+    </div>
+    <div class="wa-footer">
+      <div class="input-group mb-2">
+        <input type="text" id="waCustomMsg" class="form-control form-control-sm" placeholder="Type your inquiry...">
+      </div>
+      <button class="wa-start-chat-btn" id="waStartChatBtn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp Now</button>
+    </div>
+  </div>
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- ================= CONSULTATION MODAL ================= -->
+  <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content border-0 shadow-lg rounded-4">
         <div class="modal-header bg-gradient-teal text-white p-4">
-          <h5 class="modal-title fw-bold">Book Free Consultation</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          <h5 class="modal-title fw-bold" id="consultationModalLabel"><i class="bi bi-calendar2-check me-2"></i> Get Free Consultation</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-4">
           <form class="qe-ajax-form">
             <div class="row g-3">
-              <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required></div>
-              <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address" required></div>
-              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
               <div class="col-md-6">
-                <select class="form-select">
-                  <option>Mainland Company Setup</option>
-                  <option>Free Zone Company Formation</option>
-                  <option>Corporate Tax & VAT</option>
-                  <option>Corporate Banking</option>
+                <label class="form-label small fw-semibold">Full Name *</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Email Address *</label>
+                <input type="email" class="form-control" placeholder="you@company.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Phone / WhatsApp Number *</label>
+                <input type="tel" class="form-control" placeholder="+971 50 123 4567" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Service</label>
+                <select class="form-select" id="modalServiceSelect">
+                  <option value="mainland">New Company Formation &amp; License Renewal</option>
+                  <option value="sponsorship">Local Sponsorship Services</option>
+                  <option value="office">Private office for Rent in Dubai, UAE</option>
+                  <option value="virtual">Virtual Office, EJARI &amp; ESTIDAMA Services</option>
+                  <option value="pro">VISA Services</option>
+                  <option value="tax">VAT Registration &amp; Corporate Tax Registration</option>
+                  <option value="banking">Bank Account Opening</option>
                 </select>
               </div>
-              <div class="col-12"><textarea class="form-control" rows="3" placeholder="Tell us about your requirements..."></textarea></div>
+              <div class="col-12">
+                <label class="form-label small fw-semibold">Message</label>
+                <textarea class="form-control" id="modalNotes" rows="3"></textarea>
+              </div>
             </div>
             <div class="mt-4 text-end">
-              <button type="submit" class="btn btn-primary px-4">Submit</button>
+              <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary px-4"><i class="bi bi-send-fill me-1"></i> Get in Touch</button>
             </div>
           </form>
         </div>
@@ -347,9 +452,43 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+  <!-- ================= MOBILE NAVIGATION OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end ap-offcanvas" tabindex="-1" id="mobileMenuOffcanvas" aria-label="Mobile menu">
+    <div class="offcanvas-header">
+      <img src="assets/images/logo-darck.png" alt="Quick Express" style="height: 40px;">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="ap-mnav">
+        <li><a href="index.html">Home <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="about.html" class="active">About Us <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="services.html">Services <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="blog.html">Blog <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="offers.html">Offers <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="contact.html">Contact Us <i class="bi bi-chevron-right"></i></a></li>
+      </ul>
+      <button class="ap-btn ap-btn-primary w-100 justify-content-center mb-2" data-bs-toggle="modal"
+        data-bs-target="#consultationModal" data-bs-dismiss="offcanvas">Get Free Consultation</button>
+      <a href="tel:043346911" class="ap-btn ap-btn-outline w-100 justify-content-center"><i class="bi bi-telephone"></i> Call Now</a>
+    </div>
+  </div>
 
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom Main JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Sticky header shadow on scroll (About page)
+    (function () {
+      var header = document.getElementById('apHeader');
+      if (!header) return;
+      var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 20); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+</body>
+
+</html>

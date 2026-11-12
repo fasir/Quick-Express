@@ -1,449 +1,868 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corporate Services | Quick Express Business Solutions</title>
-  <meta name="description" content="Explore full-spectrum corporate services: UAE mainland company formation, free zone licensing, corporate tax, accounting, bank account opening, and PRO services.">
-   <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+  <meta name="description"
+    content="Explore full-spectrum corporate services: UAE mainland company formation, free zone licensing, corporate tax, accounting, bank account opening, and PRO services.">
 
-  <!-- Google Fonts -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-  <!-- Bootstrap 5.3.3 & Icons -->
+  <!-- Bootstrap 5.3.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome 6.5 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
-  <!-- Top Bar -->
-  <div class="top-bar d-none d-lg-block">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-8">
-          <div class="d-flex align-items-center gap-4">
-            <span class="top-bar-item"><i class="bi bi-geo-alt-fill"></i> Level 12, Rolex Tower, Sheikh Zayed Road, Dubai, UAE</span>
-            <span class="top-bar-item"><i class="bi bi-clock-fill"></i> Mon - Sat: 8:30 AM - 6:30 PM</span>
-            <span class="top-bar-item"><i class="bi bi-telephone-fill"></i> <a href="tel:+97141234567">+971 4 123 4567</a></span>
-          </div>
-        </div>
-        <div class="col-md-4 text-end">
-          <div class="d-inline-flex align-items-center">
-            <span class="me-3 top-bar-item"><i class="bi bi-envelope-fill"></i> <a href="mailto:info@quickexpress.ae">info@quickexpress.ae</a></span>
-            <div class="top-bar-social d-inline-flex">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-            </div>
-          </div>
-        </div>
+<body class="ap-body">
+
+  <!-- ================= TOP UTILITY BAR ================= -->
+  <div class="ap-topbar d-none d-lg-block">
+    <div class="container d-flex align-items-center justify-content-between">
+      <span><i class="bi bi-geo-alt"></i> Office #312, Shaikh Mahra Building, Al Twar, Al Qusais, Dubai, UAE</span>
+      <div class="d-flex align-items-center gap-4">
+        <a href="mailto:info@quickexpress.ae"><i class="bi bi-envelope"></i> info@quickexpress.ae</a>
+        <a href="tel:043346911"><i class="bi bi-telephone"></i> 04 3346 911</a>
+        <a href="tel:+971504842101"><i class="bi bi-phone"></i> 00971 504 842 101</a>
       </div>
     </div>
   </div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/logo-darck.png" alt="Quick Express Logo" class="navbar-brand-logo">
+  <!-- ================= STICKY WHITE HEADER ================= -->
+  <header class="ap-header" id="apHeader">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="ap-logo">
+        <img src="assets/images/logo-darck.png" alt="Quick Express">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarServices" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarServices">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="services.html" id="servicesDrop" role="button" data-bs-toggle="dropdown">Services</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-fill"></i> All Business Services</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="service-details.html?type=mainland"><i class="bi bi-building-check"></i> Mainland Company Formation</a></li>
-              <li><a class="dropdown-item" href="service-details.html?type=freezone"><i class="bi bi-globe-americas"></i> Free Zone Company Setup</a></li>
-              <li><a class="dropdown-item" href="service-details.html?type=tax"><i class="bi bi-calculator"></i> Corporate Tax & VAT</a></li>
-              <li><a class="dropdown-item" href="service-details.html?type=banking"><i class="bi bi-bank"></i> Corporate Banking</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="offers.html">Special Offers</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">UAE Guides & Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="nav-cta-btn d-none d-lg-block">
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultationModal">
-            <i class="bi bi-calendar2-check"></i> Free Consultation
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Page Hero Header -->
-  <header class="page-hero-header">
-    <div class="container position-relative" style="z-index: 2;">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb breadcrumb-custom">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Services</li>
-        </ol>
+      <nav class="d-none d-lg-block" aria-label="Main navigation">
+        <ul class="ap-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </nav>
-      <h1 class="display-5 fw-bold text-white mb-2">Comprehensive UAE Corporate Services</h1>
-      <p class="lead text-light opacity-75 max-w-700">From commercial registration to tax compliance and executive banking, explore our tailored business setup capabilities.</p>
+
+      <div class="d-flex align-items-center gap-2">
+        <button class="ap-btn ap-btn-primary d-none d-sm-inline-flex" data-bs-toggle="modal"
+          data-bs-target="#consultationModal">
+          <i class="bi bi-calendar2-check"></i> Get Free Consultation
+        </button>
+        <button class="ap-burger d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenuOffcanvas" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Services Directory with Dynamic Filter Tabs -->
-  <section class="section-padding bg-light-soft">
-    <div class="container">
-      
-      <!-- Filter Controls -->
-      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" data-aos="fade-up">
-        <button class="btn btn-primary service-filter-btn" data-filter="all">All Services</button>
-        <button class="btn btn-outline-primary service-filter-btn" data-filter="formation">Company Formation</button>
-        <button class="btn btn-outline-primary service-filter-btn" data-filter="finance">Tax & Financial</button>
-        <button class="btn btn-outline-primary service-filter-btn" data-filter="corporate">Corporate Support & PRO</button>
+  <main>
+
+    <!-- ================= PAGE BANNER (text + Let's Talk form) ================= -->
+    <section class="lt-banner">
+      <span class="sv-banner-grid" aria-hidden="true"></span>
+      <span class="lt-glow-a" aria-hidden="true"></span>
+      <span class="lt-glow-b" aria-hidden="true"></span>
+      <div class="container position-relative">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7" data-aos="fade-up">
+            <nav aria-label="breadcrumb">
+              <ol class="lt-crumbs">
+                <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+                <li aria-current="page">Services</li>
+              </ol>
+            </nav>
+            <h1 class="lt-title">Comprehensive UAE <span>Corporate Services</span></h1>
+            <p class="lt-text">From commercial registration to tax compliance and executive banking, explore our tailored business setup capabilities.</p>
+            <ul class="lt-trust">
+              <li><i class="bi bi-patch-check-fill"></i> 100% Ownership</li>
+              <li><i class="bi bi-lightning-charge-fill"></i> Fast Processing</li>
+              <li><i class="bi bi-person-check-fill"></i> Dedicated Advisor</li>
+            </ul>
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <button class="lt-btn" data-bs-toggle="modal" data-bs-target="#consultationModal">Book A Free Consultation <i class="bi bi-arrow-right"></i></button>
+              <a href="tel:+97141234567" class="lt-call"><span><i class="bi bi-telephone-fill"></i></span> +971 4 123 4567</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="120">
+            <div class="lt-card">
+              <div class="lt-card-head">
+                <h2>Let's Talk</h2>
+                <p>Free Consultation</p>
+              </div>
+              <form class="qe-ajax-form lt-form">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Name" required>
+                <div class="lt-phone">
+                  <span class="lt-flag" aria-hidden="true"><i></i></span>
+                  <span class="lt-code">+971</span>
+                  <input type="tel" class="form-control" placeholder="Mobile Number" aria-label="Mobile Number" required>
+                </div>
+                <div class="lt-row">
+                  <input type="email" class="form-control" placeholder="Email" aria-label="Email" required>
+                  <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name">
+                </div>
+                <select class="form-select" aria-label="Service" required>
+                  <option value="" selected disabled>What Services Are You Looking?</option>
+                  <option>New Company Formation &amp; License Renewal</option>
+                  <option>Local Sponsorship Services</option>
+                  <option>Private office for Rent in Dubai, UAE</option>
+                  <option>Virtual Office, EJARI &amp; ESTIDAMA Services</option>
+                  <option>VISA Services</option>
+                  <option>Vat Registration &amp; Corporate Tax Registration</option>
+                  <option>Bank Account Opening</option>
+                </select>
+                <button type="submit" class="lt-submit">Submit Request <i class="bi bi-send"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Services Grid -->
-      <div class="row g-4">
-        
-        <!-- Service 1: Mainland -->
-        <div class="col-md-6 col-lg-4 filterable-service-item" data-category="formation" data-aos="fade-up">
-          <div class="service-card">
-            <div class="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Mainland">
-              <span class="service-badge-category">Mainland</span>
-              <div class="service-floating-icon"><i class="bi bi-building"></i></div>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">UAE Mainland Company Formation</h3>
-              <p class="service-desc">Enjoy unrestricted access to the entire UAE local market with 100% expatriate foreign ownership and eligibility for government contracts.</p>
-              <div class="service-features-tags">
-                <span class="service-tag">DED License</span>
-                <span class="service-tag">100% Foreign Ownership</span>
-                <span class="service-tag">No Minimum Capital</span>
-              </div>
-              <a href="service-details.html?type=mainland" class="service-link">View Service Details <i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
+    <!-- ================= SERVICES GRID ================= -->
+    <section class="sv-grid-section" id="svGrid">
+      <div class="container">
+        <div class="aa-head" data-aos="fade-up">
+          <span class="aa-eyebrow">What We Offer</span>
+          <h2 class="aa-h2">Business Setup &amp; Corporate Services</h2>
         </div>
 
-        <!-- Service 2: Free Zone -->
-        <div class="col-md-6 col-lg-4 filterable-service-item" data-category="formation" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-card">
-            <div class="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80" alt="Free Zone">
-              <span class="service-badge-category">Free Zone</span>
-              <div class="service-floating-icon"><i class="bi bi-globe"></i></div>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">Free Zone Company Setup</h3>
-              <p class="service-desc">Cost-efficient company setup across 50+ UAE Free Zones (IFZA, DMCC, Meydan, RAKEZ) with zero customs duty and full profit repatriation.</p>
-              <div class="service-features-tags">
-                <span class="service-tag">0% Custom Duties</span>
-                <span class="service-tag">Remote Registration</span>
-                <span class="service-tag">Flexi-Desk</span>
-              </div>
-              <a href="service-details.html?type=freezone" class="service-link">View Service Details <i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
+        <!-- Filter (segmented control) -->
+        <div class="sv-filter" data-aos="fade-up">
+          <button class="service-filter-btn active" data-filter="all"><i class="bi bi-grid"></i> All Services</button>
+          <button class="service-filter-btn" data-filter="formation"><i class="bi bi-building-add"></i> Company Formation</button>
+          <button class="service-filter-btn" data-filter="visa"><i class="bi bi-passport"></i> Visa Services</button>
+          <button class="service-filter-btn" data-filter="finance"><i class="bi bi-calculator"></i> Tax &amp; Financial</button>
+          <button class="service-filter-btn" data-filter="corporate"><i class="bi bi-briefcase"></i> Corporate Support &amp; PRO</button>
         </div>
 
-        <!-- Service 3: Offshore -->
-        <div class="col-md-6 col-lg-4 filterable-service-item" data-category="formation" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-card">
-            <div class="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=700&q=80" alt="Offshore">
-              <span class="service-badge-category">Offshore</span>
-              <div class="service-floating-icon"><i class="bi bi-shield-check"></i></div>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">Offshore Company Registration</h3>
-              <p class="service-desc">Asset structuring, international holding entities, and global IP protection through RAK ICC and JAFZA offshore frameworks.</p>
-              <div class="service-features-tags">
-                <span class="service-tag">Asset Protection</span>
-                <span class="service-tag">Confidentiality</span>
-                <span class="service-tag">Multi-Currency</span>
+        <div class="sv-catpanel" data-panel="formation" hidden>
+          <a href="service-details.html?type=company-formation" class="sv-catpanel-main"><span>New Company Formation &amp; License Renewal</span><i class="bi bi-chevron-right"></i></a>
+          <div class="sv-catpanel-subs"><a href="service-details.html?type=mainland"><i class="bi bi-buildings"></i> Mainland Licence <i class="bi bi-arrow-up-right"></i></a><a href="service-details.html?type=freezone"><i class="bi bi-globe2"></i> Freezone Licence <i class="bi bi-arrow-up-right"></i></a><a href="service-details.html?type=industrial"><i class="bi bi-gear"></i> Industrial Licence <i class="bi bi-arrow-up-right"></i></a></div>
+        </div>
+        <div class="sv-catpanel" data-panel="visa" hidden>
+          <a href="service-details.html?type=visa-services" class="sv-catpanel-main"><span>VISA Services</span><i class="bi bi-chevron-right"></i></a>
+          <div class="sv-catpanel-subs"><a href="service-details.html?type=residential-visa"><i class="bi bi-house-door"></i> Residential Visa <i class="bi bi-arrow-up-right"></i></a><a href="service-details.html?type=investor-visa"><i class="bi bi-graph-up-arrow"></i> Investor Visa <i class="bi bi-arrow-up-right"></i></a><a href="service-details.html?type=golden-visa"><i class="bi bi-award"></i> Golden Visa <i class="bi bi-arrow-up-right"></i></a><a href="service-details.html?type=visit-visa"><i class="bi bi-airplane"></i> Visit Visa <i class="bi bi-arrow-up-right"></i></a></div>
+        </div>
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-4 filterable-service-item" data-category="formation" data-aos="fade-up">
+            <article class="sv-card">
+              <div class="sv-card-media">
+                <img src="assets/images/services/new-company-formation-license-renewal.webp" alt="New Company Formation & License Renewal" loading="lazy">
+                <span class="sv-card-badge">Company Formation</span>
+                <span class="sv-card-num">01</span>
               </div>
-              <a href="service-details.html?type=offshore" class="service-link">View Service Details <i class="bi bi-chevron-right"></i></a>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-building-add"></i></span>
+                <h3>New Company Formation &amp; License Renewal</h3>
+                <p>Typically, three main licenses are issued for businesses operating within mainland company formation in Dubai, tailored to suit the specific business endeavors.</p>
+                <div class="sv-tags"><span>Mainland Licence</span><span>Freezone Licence</span><span>Industrial Licence</span></div>
+                <a href="service-details.html?type=company-formation" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 filterable-service-item" data-category="formation" data-aos="fade-up" data-aos-delay="100">
+            <article class="sv-card">
+              <div class="sv-card-media">
+                <img src="assets/images/services/local-sponsorship-services.webp" alt="Local Sponsorship Services" loading="lazy">
+                <span class="sv-card-badge">Sponsorship</span>
+                <span class="sv-card-num">02</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-person-check"></i></span>
+                <h3>Local Sponsorship Services</h3>
+                <p>If you are willing to start up your business in the mainland then, according to UAE law, you need to have a local sponsor. Having a local sponsor facilitates the business formation process.</p>
+                <div class="sv-tags"><span>Mainland Setup</span><span>Legal Compliance</span></div>
+                <a href="service-details.html?type=local-sponsorship" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 filterable-service-item" data-category="corporate" data-aos="fade-up" data-aos-delay="200">
+            <article class="sv-card">
+              <div class="sv-card-media">
+                <img src="assets/images/services/private-office-for-rent.webp" alt="Private office for Rent in Dubai, UAE" loading="lazy">
+                <span class="sv-card-badge">Office Space</span>
+                <span class="sv-card-num">03</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-door-open"></i></span>
+                <h3>Private office for Rent in Dubai, UAE</h3>
+                <p>Private office spaces for business use on a monthly rent basis, offering flexible and professional workspace solutions to individuals and companies.</p>
+                <div class="sv-tags"><span>Monthly Rent</span><span>Professional Environment</span></div>
+                <a href="service-details.html?type=private-office" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 filterable-service-item" data-category="corporate" data-aos="fade-up">
+            <article class="sv-card">
+              <div class="sv-card-media">
+                <img src="assets/images/services/virtual-office-ejari-estidama-services.webp" alt="Virtual Office, EJARI & ESTIDAMA Services" loading="lazy">
+                <span class="sv-card-badge">Virtual Office</span>
+                <span class="sv-card-num">04</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-pin-map"></i></span>
+                <h3>Virtual Office, EJARI &amp; ESTIDAMA Services</h3>
+                <p>Establish a professional presence for your business in Dubai without the cost and commitment of a physical office space, with a prestigious address and legal compliance.</p>
+                <div class="sv-tags"><span>Virtual Office</span><span>EJARI</span><span>ESTIDAMA</span></div>
+                <a href="service-details.html?type=virtual-office" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 filterable-service-item" data-category="visa" data-aos="fade-up" data-aos-delay="100">
+            <article class="sv-card">
+              <div class="sv-card-media">
+                <img src="assets/images/services/visa-services.webp" alt="VISA Services" loading="lazy">
+                <span class="sv-card-badge">Visa</span>
+                <span class="sv-card-num">05</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-passport"></i></span>
+                <h3>VISA Services</h3>
+                <p>Whether you’re an individual looking to obtain a visa or a company seeking visa solutions for your employees, our expert visa services streamline the process.</p>
+                <div class="sv-tags"><span>Residential Visa</span><span>Investor Visa</span><span>Golden Visa</span><span>Visit Visa</span></div>
+                <a href="service-details.html?type=visa-services" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 filterable-service-item" data-category="finance" data-aos="fade-up" data-aos-delay="200">
+            <article class="sv-card">
+              <div class="sv-card-media">
+                <img src="assets/images/services/vat-registration.webp" alt="Vat Registration & Corporate Tax Registration" loading="lazy">
+                <span class="sv-card-badge">Tax</span>
+                <span class="sv-card-num">06</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-calculator"></i></span>
+                <h3>Vat Registration &amp; Corporate Tax Registration</h3>
+                <p>One of the most important considerations while setting up a new company in Dubai is the cost of setting it up and the direct tax-free nature of its business zones.</p>
+                <div class="sv-tags"><span>VAT Registration</span><span>Corporate Tax</span></div>
+                <a href="service-details.html?type=vat-registration" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 filterable-service-item" data-category="finance" data-aos="fade-up">
+            <article class="sv-card">
+              <div class="sv-card-media">
+                <img src="assets/images/services/bank-account-opening-uae.webp" alt="Bank Account Opening with Quick Express" loading="lazy">
+                <span class="sv-card-badge">Banking</span>
+                <span class="sv-card-num">07</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-bank"></i></span>
+                <h3>Bank Account Opening with Quick Express</h3>
+                <p>Many business people are keen on opening bank accounts in Dubai, both for personal and corporate purposes, to safeguard their financial assets.</p>
+                <div class="sv-tags"><span>Corporate Accounts</span><span>Personal Accounts</span></div>
+                <a href="service-details.html?type=bank-account" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 sv-sub-item" data-category="formation" style="display:none">
+            <article class="sv-card sv-card-sub">
+              <div class="sv-card-media">
+                <img src="assets/images/services/mainland-licence.webp" alt="Mainland Licence" loading="lazy">
+                <span class="sv-card-badge"><i class="bi bi-diagram-3"></i> New Company Formation</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-buildings"></i></span>
+                <span class="sv-sub-label">Sub-Service</span>
+                <h3>Mainland Licence</h3>
+                <p>Mainland business license provider in Dubai, with professional, commercial, industrial and tourism licenses.</p>
+                <div class="sv-tags"><span>Professional</span><span>Commercial</span><span>Industrial</span><span>Tourism</span></div>
+                <a href="service-details.html?type=mainland" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 sv-sub-item" data-category="formation" style="display:none">
+            <article class="sv-card sv-card-sub">
+              <div class="sv-card-media">
+                <img src="assets/images/services/freezone-licence.webp" alt="Freezone Licence" loading="lazy">
+                <span class="sv-card-badge"><i class="bi bi-diagram-3"></i> New Company Formation</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-globe2"></i></span>
+                <span class="sv-sub-label">Sub-Service</span>
+                <h3>Freezone Licence</h3>
+                <p>Freezone license provider in Dubai. One of the most important considerations while setting up a new company in Dubai is the cost of setting it up.</p>
+                <div class="sv-tags"><span>Freezone Setup</span></div>
+                <a href="service-details.html?type=freezone" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 sv-sub-item" data-category="formation" style="display:none">
+            <article class="sv-card sv-card-sub">
+              <div class="sv-card-media">
+                <img src="assets/images/services/industrial-licence.webp" alt="Industrial Licence" loading="lazy">
+                <span class="sv-card-badge"><i class="bi bi-diagram-3"></i> New Company Formation</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-gear"></i></span>
+                <span class="sv-sub-label">Sub-Service</span>
+                <h3>Industrial Licence</h3>
+                <p>Industrial license services in Dubai for manufacturing enterprises and industrial businesses.</p>
+                <div class="sv-tags"><span>Manufacturing</span><span>Industrial</span></div>
+                <a href="service-details.html?type=industrial" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 sv-sub-item" data-category="visa" style="display:none">
+            <article class="sv-card sv-card-sub">
+              <div class="sv-card-media">
+                <img src="assets/images/services/residential-visa.webp" alt="Residential Visa" loading="lazy">
+                <span class="sv-card-badge"><i class="bi bi-diagram-3"></i> VISA Services</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-house-door"></i></span>
+                <span class="sv-sub-label">Sub-Service</span>
+                <h3>Residential Visa</h3>
+                <p>Whether you’re relocating to Dubai for work or seeking long-term residency, we’ll help you navigate the residency visa process efficiently and effectively.</p>
+                <div class="sv-tags"><span>Residency</span></div>
+                <a href="service-details.html?type=residential-visa" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 sv-sub-item" data-category="visa" style="display:none">
+            <article class="sv-card sv-card-sub">
+              <div class="sv-card-media">
+                <img src="assets/images/services/investor-visa.webp" alt="Investor Visa" loading="lazy">
+                <span class="sv-card-badge"><i class="bi bi-diagram-3"></i> VISA Services</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-graph-up-arrow"></i></span>
+                <span class="sv-sub-label">Sub-Service</span>
+                <h3>Investor Visa</h3>
+                <p>From legal requirements, eligibility, and terms of agreement, we have everything covered for our clients.</p>
+                <div class="sv-tags"><span>Investors</span></div>
+                <a href="service-details.html?type=investor-visa" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 sv-sub-item" data-category="visa" style="display:none">
+            <article class="sv-card sv-card-sub">
+              <div class="sv-card-media">
+                <img src="assets/images/services/golden-visa.webp" alt="Golden Visa" loading="lazy">
+                <span class="sv-card-badge"><i class="bi bi-diagram-3"></i> VISA Services</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-award"></i></span>
+                <span class="sv-sub-label">Sub-Service</span>
+                <h3>Golden Visa</h3>
+                <p>Dubai’s Golden Visa program offers investors, entrepreneurs, and professionals long-term residency in one of the world’s most dynamic business hubs.</p>
+                <div class="sv-tags"><span>Long-term Residency</span></div>
+                <a href="service-details.html?type=golden-visa" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 sv-sub-item" data-category="visa" style="display:none">
+            <article class="sv-card sv-card-sub">
+              <div class="sv-card-media">
+                <img src="assets/images/services/visit-visa.webp" alt="Visit Visa" loading="lazy">
+                <span class="sv-card-badge"><i class="bi bi-diagram-3"></i> VISA Services</span>
+              </div>
+              <div class="sv-card-body">
+                <span class="sv-card-icon"><i class="bi bi-airplane"></i></span>
+                <span class="sv-sub-label">Sub-Service</span>
+                <h3>Visit Visa</h3>
+                <p>We take care of all your requirements, while we take care of all the formalities and regulatory compliances.</p>
+                <div class="sv-tags"><span>Visit</span></div>
+                <a href="service-details.html?type=visit-visa" class="sv-card-link">View Service Details <span><i class="bi bi-arrow-up-right"></i></span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Help tile -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="sv-help-tile">
+              <span class="sv-help-icon"><i class="bi bi-headset"></i></span>
+              <h3>Not sure which service fits?</h3>
+              <p>Tell us about your business and a senior setup advisor will recommend the right structure.</p>
+              <button class="aa-btn aa-btn-gold" data-bs-toggle="modal" data-bs-target="#consultationModal">Get Free Consultation <i class="bi bi-arrow-right"></i></button>
+              <a href="tel:+97141234567" class="sv-help-call"><i class="bi bi-telephone-fill"></i> +971 4 123 4567</a>
             </div>
           </div>
-        </div>
 
-        <!-- Service 4: Corporate Tax & VAT -->
-        <div class="col-md-6 col-lg-4 filterable-service-item" data-category="finance" data-aos="fade-up">
-          <div class="service-card">
-            <div class="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=700&q=80" alt="Corporate Tax">
-              <span class="service-badge-category">Taxation</span>
-              <div class="service-floating-icon"><i class="bi bi-calculator"></i></div>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">Corporate Tax & VAT Advisory</h3>
-              <p class="service-desc">Guaranteed compliance with the UAE Federal Tax Authority (FTA). Comprehensive tax registration, return filing, and audit mitigation.</p>
-              <div class="service-features-tags">
-                <span class="service-tag">FTA Compliant</span>
-                <span class="service-tag">9% Corporate Tax</span>
-                <span class="service-tag">VAT Filings</span>
-              </div>
-              <a href="service-details.html?type=tax" class="service-link">View Service Details <i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
         </div>
-
-        <!-- Service 5: Accounting & Auditing -->
-        <div class="col-md-6 col-lg-4 filterable-service-item" data-category="finance" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-card">
-            <div class="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=700&q=80" alt="Accounting">
-              <span class="service-badge-category">Accounting</span>
-              <div class="service-floating-icon"><i class="bi bi-journal-bookmark"></i></div>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">Accounting & Auditing Services</h3>
-              <p class="service-desc">Certified chartered accountants providing routine IFRS bookkeeping, annual statutory audit reports, and financial forecasting.</p>
-              <div class="service-features-tags">
-                <span class="service-tag">IFRS Standards</span>
-                <span class="service-tag">Annual Audit</span>
-                <span class="service-tag">Cloud Software</span>
-              </div>
-              <a href="service-details.html?type=accounting" class="service-link">View Service Details <i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 6: Corporate Banking -->
-        <div class="col-md-6 col-lg-4 filterable-service-item" data-category="corporate" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-card">
-            <div class="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=700&q=80" alt="Banking">
-              <span class="service-badge-category">Banking</span>
-              <div class="service-floating-icon"><i class="bi bi-bank"></i></div>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">Corporate Bank Account Support</h3>
-              <p class="service-desc">Dedicated assistance with KYC/compliance dossiers for smooth approvals with top UAE banks like Emirates NBD, Mashreq, and Wio.</p>
-              <div class="service-features-tags">
-                <span class="service-tag">Pre-Compliance</span>
-                <span class="service-tag">Tier-1 Banks</span>
-                <span class="service-tag">Digital Fast Track</span>
-              </div>
-              <a href="service-details.html?type=banking" class="service-link">View Service Details <i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 7: PRO & Visas -->
-        <div class="col-md-6 col-lg-4 filterable-service-item" data-category="corporate" data-aos="fade-up">
-          <div class="service-card">
-            <div class="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=700&q=80" alt="Visas & PRO">
-              <span class="service-badge-category">Immigration</span>
-              <div class="service-floating-icon"><i class="bi bi-person-badge"></i></div>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">PRO & Investor Visa Services</h3>
-              <p class="service-desc">Concierge handling of UAE Golden Visas, Investor/Partner Visas, family sponsorships, medical test VIP escort, and Emirates ID biometric processing.</p>
-              <div class="service-features-tags">
-                <span class="service-tag">Golden Visas</span>
-                <span class="service-tag">Emirates ID VIP</span>
-                <span class="service-tag">Family Sponsorship</span>
-              </div>
-              <a href="service-details.html?type=pro" class="service-link">View Service Details <i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 8: Trademark -->
-        <div class="col-md-6 col-lg-4 filterable-service-item" data-category="corporate" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-card">
-            <div class="service-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=700&q=80" alt="Trademark">
-              <span class="service-badge-category">Legal & IP</span>
-              <div class="service-floating-icon"><i class="bi bi-award"></i></div>
-            </div>
-            <div class="service-body">
-              <h3 class="service-title">Trademark & IP Protection</h3>
-              <p class="service-desc">Secure your brand names, trademarks, copyrights, and intellectual property across the UAE and GCC through Ministry of Economy registries.</p>
-              <div class="service-features-tags">
-                <span class="service-tag">Ministry Registered</span>
-                <span class="service-tag">GCC Protection</span>
-                <span class="service-tag">Brand Safety</span>
-              </div>
-              <a href="service-details.html?type=trademark" class="service-link">View Service Details <i class="bi bi-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ Accordion Section -->
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <span class="badge-tag"><i class="bi bi-question-circle-fill"></i> Clarity & Answers</span>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-subtitle">Common queries regarding setting up and operating a business in Dubai and the UAE.</p>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-9">
-          <div class="accordion" id="servicesFaq">
-            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
-              <h2 class="accordion-header">
-                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                  Can foreign nationals own 100% of a company in Dubai Mainland?
-                </button>
-              </h2>
-              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#servicesFaq">
-                <div class="accordion-body text-muted">
-                  Yes! Following landmark updates to the UAE Commercial Companies Law, foreign investors can now hold 100% full ownership in over 1,000+ commercial, industrial, and professional mainland business activities without requiring an Emirati local sponsor.
+    <!-- ================= SERVICES & SUB-SERVICES ================= -->
+    <section class="svx">
+      <span class="sv-banner-grid" aria-hidden="true"></span>
+      <span class="svx-glow" aria-hidden="true"></span>
+      <div class="container position-relative">
+        <div class="aa-head aa-head-light" data-aos="fade-up">
+          <span class="aa-eyebrow aa-eyebrow-light">Explore by Category</span>
+          <h2 class="aa-h2">Our Services &amp; Sub-Services</h2>
+        </div>
+        <div class="svx-wrap" data-aos="fade-up">
+          <div class="nav flex-column svx-tabs" role="tablist">
+            <button class="svx-tab active" data-bs-toggle="pill" data-bs-target="#svx-company-formation" type="button" role="tab" aria-controls="svx-company-formation" aria-selected="true">
+              <span class="svx-tab-ico"><i class="bi bi-building-add"></i></span>
+              <span class="svx-tab-txt">New Company Formation &amp; License Renewal</span><span class="svx-count">3</span>
+              <i class="bi bi-chevron-right svx-tab-arrow"></i>
+            </button>
+            <button class="svx-tab" data-bs-toggle="pill" data-bs-target="#svx-local-sponsorship" type="button" role="tab" aria-controls="svx-local-sponsorship" aria-selected="false">
+              <span class="svx-tab-ico"><i class="bi bi-person-check"></i></span>
+              <span class="svx-tab-txt">Local Sponsorship Services</span>
+              <i class="bi bi-chevron-right svx-tab-arrow"></i>
+            </button>
+            <button class="svx-tab" data-bs-toggle="pill" data-bs-target="#svx-private-office" type="button" role="tab" aria-controls="svx-private-office" aria-selected="false">
+              <span class="svx-tab-ico"><i class="bi bi-door-open"></i></span>
+              <span class="svx-tab-txt">Private office for Rent in Dubai, UAE</span>
+              <i class="bi bi-chevron-right svx-tab-arrow"></i>
+            </button>
+            <button class="svx-tab" data-bs-toggle="pill" data-bs-target="#svx-virtual-office" type="button" role="tab" aria-controls="svx-virtual-office" aria-selected="false">
+              <span class="svx-tab-ico"><i class="bi bi-pin-map"></i></span>
+              <span class="svx-tab-txt">Virtual Office, EJARI &amp; ESTIDAMA Services</span>
+              <i class="bi bi-chevron-right svx-tab-arrow"></i>
+            </button>
+            <button class="svx-tab" data-bs-toggle="pill" data-bs-target="#svx-visa-services" type="button" role="tab" aria-controls="svx-visa-services" aria-selected="false">
+              <span class="svx-tab-ico"><i class="bi bi-passport"></i></span>
+              <span class="svx-tab-txt">VISA Services</span><span class="svx-count">4</span>
+              <i class="bi bi-chevron-right svx-tab-arrow"></i>
+            </button>
+            <button class="svx-tab" data-bs-toggle="pill" data-bs-target="#svx-vat-registration" type="button" role="tab" aria-controls="svx-vat-registration" aria-selected="false">
+              <span class="svx-tab-ico"><i class="bi bi-calculator"></i></span>
+              <span class="svx-tab-txt">Vat Registration &amp; Corporate Tax Registration</span>
+              <i class="bi bi-chevron-right svx-tab-arrow"></i>
+            </button>
+            <button class="svx-tab" data-bs-toggle="pill" data-bs-target="#svx-bank-account" type="button" role="tab" aria-controls="svx-bank-account" aria-selected="false">
+              <span class="svx-tab-ico"><i class="bi bi-bank"></i></span>
+              <span class="svx-tab-txt">Bank Account Opening with Quick Express</span>
+              <i class="bi bi-chevron-right svx-tab-arrow"></i>
+            </button>
+          </div>
+          <div class="tab-content svx-content">
+            <div class="tab-pane fade show active" id="svx-company-formation" role="tabpanel">
+              <div class="svx-pane">
+                <div class="svx-media">
+                  <img src="assets/images/services/new-company-formation-license-renewal.webp" alt="New Company Formation & License Renewal" loading="lazy">
+                  <span class="svx-media-num">01</span>
+                </div>
+                <div class="svx-body">
+                  <h3>New Company Formation &amp; License Renewal</h3>
+                  <p>Typically, three main licenses are issued for businesses operating within mainland company formation in Dubai. We also handle license renewal so your business stays compliant and continues to operate legally.</p>
+                  <div class="svx-subs-head"><span>Sub-Services</span><i></i></div>
+                  <div class="svx-subs">
+                    <div class="svx-sub svx-sub-wide">
+                      <a href="service-details.html?type=mainland" class="svx-sub-main"><span class="svx-sub-ico"><i class="bi bi-buildings"></i></span><strong>Mainland Licence</strong><i class="bi bi-arrow-up-right"></i></a>
+                      <div class="svx-nest"><a href="service-details.html?type=professional-license">Professional License</a><a href="service-details.html?type=commercial-license">Commercial License</a><a href="service-details.html?type=industrial-license">Industrial License</a><a href="service-details.html?type=tourism-license">Tourism License</a></div>
+                    </div>
+                    <div class="svx-sub">
+                      <a href="service-details.html?type=freezone" class="svx-sub-main"><span class="svx-sub-ico"><i class="bi bi-globe2"></i></span><strong>Freezone Licence</strong><i class="bi bi-arrow-up-right"></i></a>
+                      
+                    </div>
+                    <div class="svx-sub">
+                      <a href="service-details.html?type=industrial" class="svx-sub-main"><span class="svx-sub-ico"><i class="bi bi-gear"></i></span><strong>Industrial Licence</strong><i class="bi bi-arrow-up-right"></i></a>
+                      
+                    </div>
+                  </div>
+                  <a href="service-details.html?type=company-formation" class="aa-btn aa-btn-gold">View Service Details <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
-
-            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                  What is the fundamental difference between Mainland and Free Zone?
-                </button>
-              </h2>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#servicesFaq">
-                <div class="accordion-body text-muted">
-                  A <strong>Mainland</strong> license permits you to trade directly anywhere inside the UAE local market and participate in UAE government tenders. A <strong>Free Zone</strong> license offers specialized geographic benefits, 0% customs duties, digital formation, and is ideal for international trade, software/consulting, and e-commerce.
+            <div class="tab-pane fade" id="svx-local-sponsorship" role="tabpanel">
+              <div class="svx-pane">
+                <div class="svx-media">
+                  <img src="assets/images/services/local-sponsorship-services.webp" alt="Local Sponsorship Services" loading="lazy">
+                  <span class="svx-media-num">02</span>
+                </div>
+                <div class="svx-body">
+                  <h3>Local Sponsorship Services</h3>
+                  <p>If you are willing to start up your business in the mainland then, according to UAE law, you need to have a local sponsor. Having a local sponsor facilitates the business formation process.</p>
+                  <a href="service-details.html?type=local-sponsorship" class="aa-btn aa-btn-gold">View Service Details <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
-
-            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                  How long does it take to obtain a UAE trade license?
-                </button>
-              </h2>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#servicesFaq">
-                <div class="accordion-body text-muted">
-                  With Quick Express, Free Zone trade licenses can be issued within <strong>24 to 48 hours</strong>. Mainland licenses typically take <strong>3 to 5 business days</strong> following initial approval and trade name registration.
+            <div class="tab-pane fade" id="svx-private-office" role="tabpanel">
+              <div class="svx-pane">
+                <div class="svx-media">
+                  <img src="assets/images/services/private-office-for-rent.webp" alt="Private office for Rent in Dubai, UAE" loading="lazy">
+                  <span class="svx-media-num">03</span>
+                </div>
+                <div class="svx-body">
+                  <h3>Private office for Rent in Dubai, UAE</h3>
+                  <p>Private office spaces for business use on a monthly rent basis, offering flexible and professional workspace solutions to individuals and companies.</p>
+                  <a href="service-details.html?type=private-office" class="aa-btn aa-btn-gold">View Service Details <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
-
-            <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                  Do all UAE companies need to register for Corporate Tax?
-                </button>
-              </h2>
-              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#servicesFaq">
-                <div class="accordion-body text-muted">
-                  Yes, every taxable entity in the UAE—including Mainland and Free Zone companies—is legally mandated to register for UAE Corporate Tax with the Federal Tax Authority (FTA). Net profits up to AED 375,000 are taxed at 0%, while profits exceeding this threshold are subject to a standard 9% rate. Qualifying Free Zone persons may benefit from 0% on qualifying income.
+            <div class="tab-pane fade" id="svx-virtual-office" role="tabpanel">
+              <div class="svx-pane">
+                <div class="svx-media">
+                  <img src="assets/images/services/virtual-office-ejari-estidama-services.webp" alt="Virtual Office, EJARI & ESTIDAMA Services" loading="lazy">
+                  <span class="svx-media-num">04</span>
+                </div>
+                <div class="svx-body">
+                  <h3>Virtual Office, EJARI &amp; ESTIDAMA Services</h3>
+                  <p>Establish a professional presence for your business in Dubai without the cost and commitment of a physical office space, with a prestigious address and legal compliance.</p>
+                  <a href="service-details.html?type=virtual-office" class="aa-btn aa-btn-gold">View Service Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="svx-visa-services" role="tabpanel">
+              <div class="svx-pane">
+                <div class="svx-media">
+                  <img src="assets/images/services/visa-services.webp" alt="VISA Services" loading="lazy">
+                  <span class="svx-media-num">05</span>
+                </div>
+                <div class="svx-body">
+                  <h3>VISA Services</h3>
+                  <p>Whether you’re an individual looking to obtain a visa or a company seeking visa solutions for your employees, our expert visa services streamline the process and ensure a hassle-free experience.</p>
+                  <div class="svx-subs-head"><span>Sub-Services</span><i></i></div>
+                  <div class="svx-subs">
+                    <div class="svx-sub">
+                      <a href="service-details.html?type=residential-visa" class="svx-sub-main"><span class="svx-sub-ico"><i class="bi bi-house-door"></i></span><strong>Residential Visa</strong><i class="bi bi-arrow-up-right"></i></a>
+                      
+                    </div>
+                    <div class="svx-sub">
+                      <a href="service-details.html?type=investor-visa" class="svx-sub-main"><span class="svx-sub-ico"><i class="bi bi-graph-up-arrow"></i></span><strong>Investor Visa</strong><i class="bi bi-arrow-up-right"></i></a>
+                      
+                    </div>
+                    <div class="svx-sub">
+                      <a href="service-details.html?type=golden-visa" class="svx-sub-main"><span class="svx-sub-ico"><i class="bi bi-award"></i></span><strong>Golden Visa</strong><i class="bi bi-arrow-up-right"></i></a>
+                      
+                    </div>
+                    <div class="svx-sub">
+                      <a href="service-details.html?type=visit-visa" class="svx-sub-main"><span class="svx-sub-ico"><i class="bi bi-airplane"></i></span><strong>Visit Visa</strong><i class="bi bi-arrow-up-right"></i></a>
+                      
+                    </div>
+                  </div>
+                  <a href="service-details.html?type=visa-services" class="aa-btn aa-btn-gold">View Service Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="svx-vat-registration" role="tabpanel">
+              <div class="svx-pane">
+                <div class="svx-media">
+                  <img src="assets/images/services/vat-registration.webp" alt="Vat Registration & Corporate Tax Registration" loading="lazy">
+                  <span class="svx-media-num">06</span>
+                </div>
+                <div class="svx-body">
+                  <h3>Vat Registration &amp; Corporate Tax Registration</h3>
+                  <p>One of the most important considerations while setting up a new company in Dubai is the cost of setting it up. What attracts most to entrepreneurs is the direct tax-free nature of its business zones.</p>
+                  <a href="service-details.html?type=vat-registration" class="aa-btn aa-btn-gold">View Service Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="svx-bank-account" role="tabpanel">
+              <div class="svx-pane">
+                <div class="svx-media">
+                  <img src="assets/images/services/bank-account-opening-uae.webp" alt="Bank Account Opening with Quick Express" loading="lazy">
+                  <span class="svx-media-num">07</span>
+                </div>
+                <div class="svx-body">
+                  <h3>Bank Account Opening with Quick Express</h3>
+                  <p>Many business people are keen on opening bank accounts in Dubai, both for personal and corporate purposes, to safeguard their financial assets. The procedure varies from bank to bank, and we guide you through every step.</p>
+                  <a href="service-details.html?type=bank-account" class="aa-btn aa-btn-gold">View Service Details <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- WhatsApp Widget & Footer -->
-  <button class="wa-floating-btn" id="waToggleBtn" aria-label="Chat on WhatsApp"><div class="wa-pulse"></div><i class="fab fa-whatsapp"></i></button>
-  <div class="wa-chat-window" id="waChatWindow">
-    <div class="wa-header">
-      <div class="wa-header-agent">
-        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80" alt="Consultant" class="wa-avatar">
-        <div>
-          <div class="wa-agent-title">Quick Express Support</div>
-          <div class="wa-agent-status"><span class="wa-status-dot"></span> Online</div>
+    <!-- ================= PROCESS ================= -->
+    <section class="sv-process">
+      <div class="container position-relative">
+        <div class="aa-head aa-head-light" data-aos="fade-up">
+          <span class="aa-eyebrow aa-eyebrow-light">How It Works</span>
+          <h2 class="aa-h2">From First Call to Licence in Hand</h2>
+        </div>
+        <div class="sv-steps">
+          <div class="sv-step" data-aos="fade-up" data-aos-delay="0">
+            <span class="sv-step-num">01</span>
+            <span class="sv-step-icon"><i class="bi bi-chat-dots"></i></span>
+            <h3>Initial Consultation</h3>
+            <p>We determine the optimal jurisdiction and business activities for your operational model.</p>
+          </div>
+          <div class="sv-step" data-aos="fade-up" data-aos-delay="100">
+            <span class="sv-step-num">02</span>
+            <span class="sv-step-icon"><i class="bi bi-patch-check"></i></span>
+            <h3>Name &amp; Initial Approval</h3>
+            <p>We secure trade name clearance and initial government approval.</p>
+          </div>
+          <div class="sv-step" data-aos="fade-up" data-aos-delay="200">
+            <span class="sv-step-num">03</span>
+            <span class="sv-step-icon"><i class="bi bi-file-earmark-text"></i></span>
+            <h3>Documents &amp; MOA</h3>
+            <p>Preparation and signing of your AOA / MOA, remotely or in person.</p>
+          </div>
+          <div class="sv-step" data-aos="fade-up" data-aos-delay="300">
+            <span class="sv-step-num">04</span>
+            <span class="sv-step-icon"><i class="bi bi-rocket-takeoff"></i></span>
+            <h3>Licence, Visas &amp; Banking</h3>
+            <p>Trade licence issued, followed by establishment card, visas and bank account onboarding.</p>
+          </div>
         </div>
       </div>
-      <button class="wa-close-btn" id="waCloseBtn"><i class="bi bi-x-lg"></i></button>
-    </div>
-    <div class="wa-body">
-      <div class="wa-bubble"><p class="mb-0">Which service are you interested in today?</p></div>
-      <div class="wa-quick-options">
-        <div class="wa-opt-chip" data-query="Hi, I want a quote for Mainland company setup."><i class="bi bi-building text-primary"></i> Mainland Quote</div>
-        <div class="wa-opt-chip" data-query="Hi, I want a quote for Free Zone setup."><i class="bi bi-globe text-primary"></i> Free Zone Quote</div>
-      </div>
-    </div>
-    <div class="wa-footer">
-      <button class="wa-start-chat-btn" id="waStartChatBtn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</button>
-    </div>
-  </div>
+    </section>
 
-  <footer class="main-footer">
+    <!-- ================= FAQ ================= -->
+    <section class="sv-faq">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="sv-faq-side">
+              <span class="aa-eyebrow">Clarity &amp; Answers</span>
+              <h2 class="aa-h2">Frequently Asked Questions</h2>
+              <p class="aa-text">Common queries regarding setting up and operating a business in Dubai and the UAE.</p>
+              <div class="sv-faq-card">
+                <span class="sv-faq-card-icon"><i class="bi bi-chat-square-text"></i></span>
+                <h3>Still have questions?</h3>
+                <p>Speak directly with a senior business setup advisor.</p>
+                <a href="tel:+97141234567" class="sv-faq-line"><i class="bi bi-telephone-fill"></i> +971 4 123 4567</a>
+                <a href="mailto:info@quickexpress.ae" class="sv-faq-line"><i class="bi bi-envelope-fill"></i> info@quickexpress.ae</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="accordion sv-accordion" id="servicesFaq">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    <span class="sv-q">01</span> Can foreign nationals own 100% of a company in Dubai Mainland?
+                  </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#servicesFaq">
+                  <div class="accordion-body">
+                    Yes! Following landmark updates to the UAE Commercial Companies Law, foreign investors can now hold 100% full ownership in over 1,000+ commercial, industrial, and professional mainland business activities without requiring an Emirati local sponsor.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    <span class="sv-q">02</span> What is the fundamental difference between Mainland and Free Zone?
+                  </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#servicesFaq">
+                  <div class="accordion-body">
+                    A <strong>Mainland</strong> license permits you to trade directly anywhere inside the UAE local market and participate in UAE government tenders. A <strong>Free Zone</strong> license offers specialized geographic benefits, 0% customs duties, digital formation, and is ideal for international trade, software/consulting, and e-commerce.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    <span class="sv-q">03</span> How long does it take to obtain a UAE trade license?
+                  </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#servicesFaq">
+                  <div class="accordion-body">
+                    With Quick Express, Free Zone trade licenses can be issued within <strong>24 to 48 hours</strong>. Mainland licenses typically take <strong>3 to 5 business days</strong> following initial approval and trade name registration.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    <span class="sv-q">04</span> Do all UAE companies need to register for Corporate Tax?
+                  </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#servicesFaq">
+                  <div class="accordion-body">
+                    Yes, every taxable entity in the UAE—including Mainland and Free Zone companies—is legally mandated to register for UAE Corporate Tax with the Federal Tax Authority (FTA). Net profits up to AED 375,000 are taxed at 0%, while profits exceeding this threshold are subject to a standard 9% rate. Qualifying Free Zone persons may benefit from 0% on qualifying income.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER (same as home page) ================= -->
+  <footer class="curved-modern-footer mt-5">
     <div class="container">
       <div class="row g-4 mb-5">
         <div class="col-lg-4 col-md-6">
-          <img src="assets/images/logo.png" alt="Quick Express Logo" class="footer-logo">
-          <p class="footer-desc">Quick Express Business Solutions is a premier corporate advisory and business formation consultancy in Dubai, UAE.</p>
+        <img src="assets/images/logo-darck.png" alt="Quick Express Logo" class="footer-logo mb-3">
+        <p class="footer-desc">
+          Quick Express Business Solutions is a premier corporate advisory and company formation consultancy based in
+          Rolex Tower, Sheikh Zayed Road, Dubai, UAE.
+        </p>
+      
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h4 class="footer-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="offers.html">Packages</a></li>
+          <li><a href="blog.html">Blog Guides</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-details.html?type=mainland">Mainland Company Setup</a></li>
+          <li><a href="service-details.html?type=freezone">Free Zone Incorporation</a></li>
+          <li><a href="service-details.html?type=tax">Corporate Tax & VAT 9%</a></li>
+          <li><a href="service-details.html?type=accounting">Accounting & Auditing</a></li>
+          <li><a href="service-details.html?type=banking">Corporate Bank Account</a></li>
+          <li><a href="service-details.html?type=pro">PRO & Golden Visas</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Headquarters</h4>
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt-fill text-info"></i>
+          <div>Level 12, Rolex Tower, Sheikh Zayed Road, Dubai, UAE</div>
         </div>
-        <div class="col-lg-2 col-md-6">
-          <h4 class="footer-title">Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="offers.html">Offers</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone-fill text-info"></i>
+          <div><a href="tel:+97141234567" class="text-white">+971 4 123 4567</a></div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <h4 class="footer-title">Services</h4>
-          <ul class="footer-links">
-            <li><a href="service-details.html?type=mainland">Mainland Setup</a></li>
-            <li><a href="service-details.html?type=freezone">Free Zone Setup</a></li>
-            <li><a href="service-details.html?type=tax">Corporate Tax</a></li>
-            <li><a href="service-details.html?type=banking">Bank Account</a></li>
-          </ul>
+        <div class="footer-contact-item">
+          <i class="bi bi-envelope-fill text-info"></i>
+          <div><a href="mailto:info@quickexpress.ae" class="text-white">info@quickexpress.ae</a></div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <h4 class="footer-title">Contact</h4>
-          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i> Level 12, Rolex Tower, Sheikh Zayed Road, Dubai</div>
-          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i> +971 4 123 4567</div>
-          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i> info@quickexpress.ae</div>
+
+        <form class="footer-newsletter-input qe-ajax-form mt-3">
+          <input type="email" class="form-control" placeholder="Enter work email" required>
+          <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i
+              class="bi bi-arrow-right"></i></button>
+        </form>
         </div>
       </div>
-      <div class="footer-bottom text-center">
-        &copy; 2026 Quick Express Business Solutions. All Rights Reserved.
-      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      &copy; 2026 Quick Express Business Solutions. All Rights Reserved.
     </div>
   </footer>
 
-  <!-- Modal -->
-  <div class="modal fade" id="consultationModal" tabindex="-1" aria-hidden="true">
+  <!-- ================= WHATSAPP CHAT WIDGET ================= -->
+  <button class="wa-floating-btn" id="waToggleBtn" aria-label="Chat with Quick Express on WhatsApp">
+    <div class="wa-pulse"></div>
+    <i class="fab fa-whatsapp"></i>
+  </button>
+
+  <div class="wa-chat-window" id="waChatWindow">
+    <div class="wa-header">
+      <div class="wa-header-agent">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80"
+          alt="Consultant" class="wa-avatar">
+        <div>
+          <div class="wa-agent-title">Quick Express Support</div>
+          <div class="wa-agent-status"><span class="wa-status-dot"></span> Online | Senior Advisor</div>
+        </div>
+      </div>
+      <button class="wa-close-btn" id="waCloseBtn" aria-label="Close Chat Window"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="wa-body">
+      <div class="wa-bubble">
+        <p class="mb-1">Hello! Welcome to <strong>Quick Express Business Solutions</strong>.</p>
+        <p class="mb-0">How can we assist you with your UAE company formation, taxes, or visa needs today?</p>
+        <div class="wa-bubble-time">Just now</div>
+      </div>
+      <div class="wa-quick-options">
+        <div class="wa-opt-chip" data-query="Hi, I would like to inquire about Dubai Free Zone setup."><i class="bi bi-globe2"></i> Free Zone Setup Package</div>
+        <div class="wa-opt-chip" data-query="Hello, I want to form a Mainland company in Dubai with 100% ownership."><i class="bi bi-building"></i> Mainland (DED) License</div>
+        <div class="wa-opt-chip" data-query="Hi, I need assistance with UAE Corporate Tax 9% and VAT."><i class="bi bi-calculator"></i> Corporate Tax &amp; VAT Support</div>
+        <div class="wa-opt-chip" data-query="Hello, can you help me open a Corporate Bank Account in the UAE?"><i class="bi bi-bank"></i> Corporate Bank Account</div>
+      </div>
+    </div>
+    <div class="wa-footer">
+      <div class="input-group mb-2">
+        <input type="text" id="waCustomMsg" class="form-control form-control-sm" placeholder="Type your inquiry...">
+      </div>
+      <button class="wa-start-chat-btn" id="waStartChatBtn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp Now</button>
+    </div>
+  </div>
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- ================= CONSULTATION MODAL ================= -->
+  <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content border-0 shadow-lg rounded-4">
         <div class="modal-header bg-gradient-teal text-white p-4">
-          <h5 class="modal-title fw-bold">Book Free Consultation</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          <h5 class="modal-title fw-bold" id="consultationModalLabel"><i class="bi bi-calendar2-check me-2"></i> Get Free Consultation</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-4">
           <form class="qe-ajax-form">
             <div class="row g-3">
-              <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required></div>
-              <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address" required></div>
-              <div class="col-md-6"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
               <div class="col-md-6">
-                <select class="form-select">
-                  <option>Mainland Company Setup</option>
-                  <option>Free Zone Company Formation</option>
-                  <option>Corporate Tax & VAT</option>
-                  <option>Corporate Banking</option>
+                <label class="form-label small fw-semibold">Full Name *</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Email Address *</label>
+                <input type="email" class="form-control" placeholder="you@company.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Phone / WhatsApp Number *</label>
+                <input type="tel" class="form-control" placeholder="+971 50 123 4567" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Service</label>
+                <select class="form-select" id="modalServiceSelect">
+                  <option value="mainland">New Company Formation &amp; License Renewal</option>
+                  <option value="sponsorship">Local Sponsorship Services</option>
+                  <option value="office">Private office for Rent in Dubai, UAE</option>
+                  <option value="virtual">Virtual Office, EJARI &amp; ESTIDAMA Services</option>
+                  <option value="pro">VISA Services</option>
+                  <option value="tax">VAT Registration &amp; Corporate Tax Registration</option>
+                  <option value="banking">Bank Account Opening</option>
                 </select>
               </div>
-              <div class="col-12"><textarea class="form-control" rows="3" placeholder="Tell us about your requirements..."></textarea></div>
+              <div class="col-12">
+                <label class="form-label small fw-semibold">Message</label>
+                <textarea class="form-control" id="modalNotes" rows="3"></textarea>
+              </div>
             </div>
             <div class="mt-4 text-end">
-              <button type="submit" class="btn btn-primary px-4">Submit</button>
+              <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary px-4"><i class="bi bi-send-fill me-1"></i> Get in Touch</button>
             </div>
           </form>
         </div>
@@ -451,9 +870,60 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+  <!-- ================= MOBILE NAVIGATION OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end ap-offcanvas" tabindex="-1" id="mobileMenuOffcanvas" aria-label="Mobile menu">
+    <div class="offcanvas-header">
+      <img src="assets/images/logo-darck.png" alt="Quick Express" style="height: 40px;">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="ap-mnav">
+        <li><a href="index.html">Home <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="about.html">About Us <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="services.html" class="active">Services <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="blog.html">Blog <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="offers.html">Offers <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="contact.html">Contact Us <i class="bi bi-chevron-right"></i></a></li>
+      </ul>
+      <button class="ap-btn ap-btn-primary w-100 justify-content-center mb-2" data-bs-toggle="modal"
+        data-bs-target="#consultationModal" data-bs-dismiss="offcanvas">Get Free Consultation</button>
+      <a href="tel:043346911" class="ap-btn ap-btn-outline w-100 justify-content-center"><i class="bi bi-telephone"></i> Call Now</a>
+    </div>
+  </div>
 
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom Main JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Sticky header shadow on scroll (About page)
+    (function () {
+      var header = document.getElementById('apHeader');
+      if (!header) return;
+      var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 20); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+
+  <!-- Services filter: category panel + sub-service cards -->
+  <script>
+    (function () {
+      var btns = document.querySelectorAll('.service-filter-btn');
+      var subs = document.querySelectorAll('.sv-sub-item');
+      var panels = document.querySelectorAll('.sv-catpanel');
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var f = b.getAttribute('data-filter');
+          btns.forEach(function (x) { x.classList.remove('btn-primary', 'btn-outline-primary'); x.classList.toggle('active', x === b); });
+          subs.forEach(function (s) { s.style.display = (f !== 'all' && s.getAttribute('data-category') === f) ? '' : 'none'; });
+          panels.forEach(function (p) { p.hidden = p.getAttribute('data-panel') !== f; });
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>

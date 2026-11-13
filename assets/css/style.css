@@ -6522,3 +6522,10 @@ img, iframe, video { max-width: 100%; }
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 }
+
+/* Footer contact rows: whole row (icon + text) is clickable */
+a.footer-contact-item { color: #cbd5e1; text-decoration: none; transition: color .25s ease; word-break: break-word; }
+a.footer-contact-item i { transition: transform .25s ease; }
+a.footer-contact-item:hover { color: #fff; }
+a.footer-contact-item:hover i { transform: scale(1.12); }
+a.footer-contact-item .bi-whatsapp { color: #25d366 !important; }

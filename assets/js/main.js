@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const waCloseBtn = document.getElementById('waCloseBtn');
   const waStartChatBtn = document.getElementById('waStartChatBtn');
   const waCustomInput = document.getElementById('waCustomMsg');
-  const defaultWaPhone = '971501234567'; // Corporate WhatsApp Line
+  const defaultWaPhone = '971504842101'; // Corporate WhatsApp Line
 
   if (waToggleBtn && waChatWindow) {
     waToggleBtn.addEventListener('click', function () {

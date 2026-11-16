@@ -1133,6 +1133,19 @@
       buildDots(); checkMore();
     })();
   </script>
+  <!-- Home: fixed navbar -->
+  <script>
+    (function () {
+      var nav = document.querySelector('.hx-nav'), hero = document.querySelector('.hx-hero');
+      if (!nav || !hero) return;
+      function size() { hero.style.setProperty('--hx-nav-h', nav.offsetHeight + 'px'); }
+      function onScroll() { nav.classList.toggle('is-scrolled', window.scrollY > 20); }
+      window.addEventListener('resize', size);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('load', size);
+      size(); onScroll();
+    })();
+  </script>
 </body>
 
 </html>

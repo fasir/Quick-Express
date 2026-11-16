@@ -8075,3 +8075,20 @@ select.cc-input { appearance: none; -webkit-appearance: none; background-image: 
 .co-ring-val small, .co-bar-top span { color: rgba(255, 255, 255, 0.85); }
 .co-ring-bg { stroke: rgba(255, 255, 255, 0.16); }
 .co-bar { background: rgba(0, 0, 0, 0.15); }
+
+/* Home: navbar stays fixed at the top while scrolling (like inner pages) */
+.hx-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1030; background: rgba(255, 255, 255, 0.78);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); transition: background .3s ease, box-shadow .3s ease, padding .3s ease; }
+.hx-nav.is-scrolled { background: rgba(255, 255, 255, 0.95); border-bottom-color: #e3eeec; box-shadow: 0 12px 30px -18px rgba(11, 25, 38, 0.25); }
+.hx-hero { padding-top: var(--hx-nav-h, 88px); }
+/* Fixed home navbar must stay above page content (it lives inside the hero's stacking context) */
+.hx-hero { position: relative; z-index: 1030; }
+
+/* Google reviews — mobile: exactly one full card per view, smooth auto slide */
+@media (max-width: 767.98px) {
+  .gr-track { grid-auto-columns: 100%; gap: 16px; padding: 8px 0 18px; scroll-snap-type: x mandatory; scroll-padding: 0; }
+  .gr-card { scroll-snap-align: center; scroll-snap-stop: always; }
+  .gr-carousel { padding-bottom: 30px; }
+  .gr-dots span { width: 8px; height: 8px; }
+  .gr-dots span.is-active { width: 26px; }
+}

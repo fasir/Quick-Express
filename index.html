@@ -40,107 +40,98 @@
 
   <div class="boxed-content-wrapper">
 
-    <!-- ================= 1. HERO DARK CARD WITH EMBEDDED NAV ================= -->
-    <header class="hero-notched-card mb-4" data-aos="fade-down">
+    <!-- ================= 1. HERO (LIGHT CORPORATE) WITH EMBEDDED NAV ================= -->
+    <header class="hx-hero mb-4">
+      <span class="hx-grid" aria-hidden="true"></span>
+      <span class="hx-blob hx-blob-1" aria-hidden="true"></span>
+      <span class="hx-blob hx-blob-2" aria-hidden="true"></span>
 
       <!-- Embedded Top Navbar -->
-      <nav class="hero-nav-bar">
-        <a href="index.html" class="hero-brand-pill">
-          <img src="assets/images/logo.png" alt="Quick Express Business Solutions">
-        </a>
-
-        <ul class="hero-nav-links d-none d-lg-flex">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="offers.html">Offers</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-
-        <div class="d-flex align-items-center gap-3">
-          <a href="tel:+97143346911"
-            class="d-none d-md-inline-flex text-white small fw-bold align-items-center gap-2 text-decoration-none opacity-90">
-            <i class="bi bi-telephone-fill text-info"></i> 04 3346 911
+      <nav class="hx-nav">
+        <div class="container d-flex align-items-center justify-content-between gap-3">
+          <a href="index.html" class="hx-logo">
+            <img src="assets/images/logo-darck.png" alt="Quick Express Business Solutions">
           </a>
-          <button class="btn btn-gold btn-sm rounded-pill px-3 py-2 fw-bold" data-bs-toggle="modal"
-            data-bs-target="#consultationModal">
-            Free Consultation
-          </button>
-          <button class="btn btn-outline-white btn-sm d-lg-none rounded-circle p-2" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#mobileMenuOffcanvas" aria-label="Toggle navigation"
-            style="width: 38px; height: 38px;">
-            <i class="bi bi-list fs-5"></i>
-          </button>
+
+          <ul class="hx-nav-links d-none d-lg-flex">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="cost-calculator.html">Cost Calculator</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 gap-md-3">
+            <a href="tel:+97143346911" class="hx-nav-phone d-none d-xl-inline-flex">
+              <span><i class="bi bi-telephone-fill"></i></span>
+              <div><small>Call Us</small>04 3346 911</div>
+            </a>
+            <button class="hx-btn hx-btn-gold hx-btn-sm" data-bs-toggle="modal" data-bs-target="#consultationModal">
+              Free Consultation
+            </button>
+            <button class="hx-burger d-lg-none" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenuOffcanvas" aria-label="Toggle navigation">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
         </div>
       </nav>
 
-      <div class="container">
-        <!-- Hero Main Content Grid -->
-        <div class="hero-layout" data-aos="fade-up">
-          <div class="hero-copy-container" data-aos="fade-right" data-aos-delay="100">
-            <h1 class="hero-main-title">
-              Corporate Services in the <span class="hero-title-highlight">UAE</span>
+      <div class="container position-relative">
+        <div class="hx2-layout hx2-center">
+          <span class="hx2-orbit hx2-orbit-1" aria-hidden="true"></span>
+          <span class="hx2-orbit hx2-orbit-2" aria-hidden="true"></span>
+          <!-- Copy -->
+          <div class="hx2-copy" data-aos="fade-right" data-aos-delay="100">
+
+            <h1 class="hx2-title">
+              Corporate Services<br>in the <span class="hx2-hl">UAE</span>
             </h1>
 
-            <p class="hero-subtitle">
+            <p class="hx2-sub">
               Quick Express supports businesses across the UAE with accounting, audit, tax, legal advisory and estate
-              planning services. For new ventures, our team also helps you compare company formation options and prepare
-              licensing, visa and bank account applications. Explore the service you need or speak to us about your next
-              step.
+              planning services. For new ventures, our team also helps you compare company formation options and
+              prepare licensing, visa and bank account applications.
             </p>
 
-            <div class="hero-cta-row">
-              <button class="btn btn-gold hero-primary-btn" data-bs-toggle="modal" data-bs-target="#consultationModal">
+            <div class="hx2-cta">
+              <button class="hx-btn hx-btn-gold" data-bs-toggle="modal" data-bs-target="#consultationModal">
                 Get In Touch <i class="bi bi-arrow-up-right"></i>
               </button>
+              <a href="services.html" class="hx2-link">
+                <span><i class="bi bi-grid-3x3-gap"></i></span> Explore Services
+              </a>
             </div>
 
-           
-
-            <div class="hero-slider-indicator" ahero-floating-callria-label="Slider position 1 of 3">
-              <span class="is-active"></span>
-              <span></span>
-              <span></span>
+            <div class="hx2-stats">
+              <a href="#googleReviews" class="hx2-stat hx2-stat-g" aria-label="Google rating 4.6 from 2,525 reviews">
+                <span class="hx2-g"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span>
+                <div>
+                  <strong>4.6 <span class="hx2-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span></strong>
+                  <small>2,525 Google reviews</small>
+                </div>
+              </a>
+              <div class="hx2-stat">
+                <div><strong>15,000<em>+</em></strong><small>Companies formed</small></div>
+              </div>
+              <div class="hx2-stat">
+                <div><strong>950<em>+</em></strong><small>Active retainers</small></div>
+              </div>
             </div>
           </div>
 
-          <div class="hero-visual-container" data-aos="fade-left" data-aos-delay="200">
-            <div class="hero-portrait-wrap">
-              <img src="assets/images/hero-1.jpg"
-                alt="Corporate advisory team in UAE">
-            </div>
-
-            <div class="hero-gold-curve" aria-hidden="true"></div>
-            
-          </div>
         </div>
 
-        <div class="hero-services-strip">
-          <div class="hero-service-item">
-            <div class="hero-service-icon"><i class="bi bi-briefcase"></i></div>
-            <span>Business Setup</span>
-          </div>
-          <div class="hero-service-item">
-            <div class="hero-service-icon"><i class="bi bi-patch-check"></i></div>
-            <span>Legal Services</span>
-          </div>
-          <div class="hero-service-item">
-            <div class="hero-service-icon"><i class="bi bi-bank"></i></div>
-            <span>Bank Account</span>
-          </div>
-          <div class="hero-service-item">
-            <div class="hero-service-icon"><i class="bi bi-journal-text"></i></div>
-            <span>Trademark Registration</span>
-          </div>
-          <div class="hero-service-item">
-            <div class="hero-service-icon"><i class="bi bi-person-video3"></i></div>
-            <span>Virtual Receptionist</span>
-          </div>
-          <div class="hero-service-item">
-            <div class="hero-service-icon"><i class="bi bi-patch-check"></i></div>
-            <span>HR Consulting</span>
-          </div>
+        <!-- Services bar -->
+        <div class="hx2-bar">
+          <a href="services.html"><span><i class="bi bi-briefcase"></i></span>Business Setup</a>
+          <a href="services.html"><span><i class="bi bi-patch-check"></i></span>Legal Services</a>
+          <a href="services.html"><span><i class="bi bi-bank"></i></span>Bank Account</a>
+          <a href="services.html"><span><i class="bi bi-journal-text"></i></span>Trademark Registration</a>
+          <a href="services.html"><span><i class="bi bi-person-video3"></i></span>Virtual Receptionist</a>
+          <a href="services.html"><span><i class="bi bi-people"></i></span>HR Consulting</a>
         </div>
       </div>
     </header>
@@ -432,11 +423,11 @@
                   </div>
                   <div>
                     <div class="metric-value-wrap">
-                      <span class="metric-value">4.9</span>
+                      <span class="metric-value">4.6</span>
                       <span class="metric-accent text-warning">★</span>
                     </div>
                     <div class="metric-sub-label">Client Rating</div>
-                    <small class="metric-sub-tag">480+ Google Reviews</small>
+                    <small class="metric-sub-tag">2,525 Google Reviews</small>
                   </div>
                 </div>
               </div>
@@ -658,84 +649,96 @@
       </div>
     </section>
 
-    <!-- ================= 3. CLIENT TESTIMONIALS CAROUSEL ================= -->
-    <section class="testimonials-section" data-aos="fade-up">
+    <!-- ================= GOOGLE REVIEWS ================= -->
+    <!-- NOTE: review cards below are SAMPLE text. Replace names, dates and text with real reviews from your Google Business Profile. -->
+    <section class="gr-section" id="googleReviews" data-aos="fade-up">
       <div class="container">
-        <div class="section-heading text-center mb-4">
-          <span class="pill-section-tag"><i class="bi bi-chat-square-quote"></i> Client Testimonials</span>
-          <h2 class="section-title">What Our Clients Say About Working With Quick Express</h2>
+        <div class="gr-head">
+          <div>
+            <span class="gr-eyebrow"><i class="bi bi-google"></i> Google Reviews</span>
+            <h2 class="gr-title">Real success stories <br>from our <span>clients</span></h2>
+          </div>
+          <p class="gr-lead">Thousands of entrepreneurs and companies trust Quick Express for business setup, visas, tax and
+            corporate support across the UAE.</p>
         </div>
 
-        <div class="testimonials-swiper swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="testimonial-card">
-                <div class="testimonial-rating" aria-label="Rated 5 out of 5">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <div class="testimonial-quote-icon"><i class="bi bi-quote"></i></div>
-                <p class="testimonial-text">Quick Express made our Dubai company formation process smooth and transparent. Their team handled licensing, documentation, and compliance with speed and professionalism from day one.</p>
-                <div class="testimonial-author">
-                  <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Ahmed Rahman">
-                  <div>
-                    <div class="testimonial-name">Ahmed Rahman</div>
-                    <div class="testimonial-role">Founder, Desert Horizon Trading</div>
-                  </div>
-                </div>
+        <div class="gr-layout">
+          <!-- Summary -->
+          <aside class="gr-summary">
+            <span class="gr-summary-label">Excellent</span>
+            <div class="gr-summary-score">
+              <span class="hx-g gr-g-lg"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span>
+              <strong>4.6</strong>
+            </div>
+            <div class="gr-stars gr-stars-lg" aria-label="Rated 4.6 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+            <p class="gr-summary-count">Based on <strong>2,525 reviews</strong></p>
+            <div class="gr-wordmark" aria-label="Google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Quick+Express+Business+Solutions+Al+Qusais+Dubai" target="_blank" rel="noopener" class="gr-summary-btn">
+              Write a Review <i class="bi bi-pencil-square"></i>
+            </a>
+          </aside>
+
+          <!-- Carousel -->
+          <div class="gr-carousel">
+            <button class="gr-nav gr-prev" type="button" aria-label="Previous reviews"><i class="bi bi-chevron-left"></i></button>
+            <div class="gr-track" id="grTrack">
+              <article class="gr-card">
+                <header class="gr-card-head">
+                  <span class="gr-avatar" style="--c:#00808a">M</span>
+                  <div><strong>Mohammed A.</strong><small>3 weeks ago</small></div>
+                  <span class="gr-card-g" title="Google review"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span>
+                </header>
+                <div class="gr-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-patch-check-fill gr-verified" title="Verified"></i></div>
+                <p class="gr-text">Very smooth company formation process. The team explained every step of the mainland licence and handled all the documents for us quickly.</p>
+                <button class="gr-more" type="button">Read more</button>
+              </article>
+
+              <article class="gr-card">
+                <header class="gr-card-head">
+                  <span class="gr-avatar" style="--c:#c69214">S</span>
+                  <div><strong>Sara K.</strong><small>3 weeks ago</small></div>
+                  <span class="gr-card-g" title="Google review"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span>
+                </header>
+                <div class="gr-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-patch-check-fill gr-verified" title="Verified"></i></div>
+                <p class="gr-text">I'm really grateful for all the help and support I received with my residence visa. The staff were helpful, professional and supportive throughout the whole process, and always replied on WhatsApp.</p>
+                <button class="gr-more" type="button">Read more</button>
+              </article>
+
+              <article class="gr-card">
+                <header class="gr-card-head">
+                  <span class="gr-avatar" style="--c:#0a8fb0">R</span>
+                  <div><strong>Rahul P.</strong><small>1 month ago</small></div>
+                  <span class="gr-card-g" title="Google review"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span>
+                </header>
+                <div class="gr-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-patch-check-fill gr-verified" title="Verified"></i></div>
+                <p class="gr-text">Thank you Quick Express for helping me with my visa and trade licence. Very fast service and good people. Highly recommended for anyone starting a business in Dubai.</p>
+                <button class="gr-more" type="button">Read more</button>
+              </article>
+
+              <article class="gr-card">
+                <header class="gr-card-head">
+                  <span class="gr-avatar" style="--c:#004d55">F</span>
+                  <div><strong>Fatima H.</strong><small>1 month ago</small></div>
+                  <span class="gr-card-g" title="Google review"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span>
+                </header>
+                <div class="gr-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-patch-check-fill gr-verified" title="Verified"></i></div>
+                <p class="gr-text">They registered us for VAT and corporate tax and set up our bookkeeping. Clear advice, fair pricing and no surprises. Great team to work with.</p>
+                <button class="gr-more" type="button">Read more</button>
+              </article>
+
+              <article class="gr-card">
+                <header class="gr-card-head">
+                  <span class="gr-avatar" style="--c:#5b6b7b">J</span>
+                  <div><strong>James W.</strong><small>2 months ago</small></div>
+                  <span class="gr-card-g" title="Google review"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg></span>
+                </header>
+                <div class="gr-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-patch-check-fill gr-verified" title="Verified"></i></div>
+                <p class="gr-text">Freezone setup, Emirates ID and corporate bank account all done through one consultant. Saved us a lot of time and running around.</p>
+                <button class="gr-more" type="button">Read more</button>
               </article>
             </div>
-
-            <div class="swiper-slide">
-              <article class="testimonial-card">
-                <div class="testimonial-rating" aria-label="Rated 5 out of 5">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <div class="testimonial-quote-icon"><i class="bi bi-quote"></i></div>
-                <p class="testimonial-text">Their tax and VAT support helped us stay compliant without stress. The guidance was clear, practical, and tailored to our business structure and future growth plans.</p>
-                <div class="testimonial-author">
-                  <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Sophia Lewis">
-                  <div>
-                    <div class="testimonial-name">Sophia Lewis</div>
-                    <div class="testimonial-role">Finance Manager, Luma Retail</div>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="testimonial-card">
-                <div class="testimonial-rating" aria-label="Rated 5 out of 5">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <div class="testimonial-quote-icon"><i class="bi bi-quote"></i></div>
-                <p class="testimonial-text">From visa processing to banking support, they handled everything with precision. We always felt informed and supported, and our setup was completed faster than expected.</p>
-                <div class="testimonial-author">
-                  <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Daniel Brooks">
-                  <div>
-                    <div class="testimonial-name">Daniel Brooks</div>
-                    <div class="testimonial-role">Director, Northbridge Logistics</div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="testimonials-controls">
-            <button class="testi-prev" aria-label="Previous testimonial"><i class="bi bi-chevron-left"></i></button>
-            <div class="testi-pagination"></div>
-            <button class="testi-next" aria-label="Next testimonial"><i class="bi bi-chevron-right"></i></button>
+            <button class="gr-nav gr-next" type="button" aria-label="Next reviews"><i class="bi bi-chevron-right"></i></button>
+            <div class="gr-dots" id="grDots" aria-hidden="true"></div>
           </div>
         </div>
       </div>
@@ -876,13 +879,13 @@
             <i class="bi bi-telephone-fill text-info"></i>
             <span>04 3346 911</span>
           </a>
-          <a href="tel:+971504842101" class="footer-contact-item">
+          <a href="tel:+971509605770" class="footer-contact-item">
             <i class="bi bi-phone-fill text-info"></i>
-            <span>00971504842101</span>
+            <span>00971509605770</span>
           </a>
-          <a href="https://wa.me/971504842101" class="footer-contact-item" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+          <a href="https://wa.me/971509605770" class="footer-contact-item" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
             <i class="bi bi-whatsapp text-info"></i>
-            <span>00971504842101</span>
+            <span>00971509605770</span>
           </a>
           <a href="mailto:info@quickexpress.ae" class="footer-contact-item">
             <i class="bi bi-envelope-fill text-info"></i>
@@ -1037,6 +1040,7 @@
         <li><a href="services.html" class="text-white text-decoration-none d-flex align-items-center justify-content-between">Services <i class="bi bi-chevron-right fs-6"></i></a></li>
         <li><a href="blog.html" class="text-white text-decoration-none d-flex align-items-center justify-content-between">Blog <i class="bi bi-chevron-right fs-6"></i></a></li>
         <li><a href="offers.html" class="text-white text-decoration-none d-flex align-items-center justify-content-between">Offers <i class="bi bi-chevron-right fs-6"></i></a></li>
+        <li><a href="cost-calculator.html" class="text-white text-decoration-none d-flex align-items-center justify-content-between">Cost Calculator <i class="bi bi-chevron-right fs-6"></i></a></li>
         <li><a href="contact.html" class="text-white text-decoration-none d-flex align-items-center justify-content-between">Contact Us <i class="bi bi-chevron-right fs-6"></i></a></li>
       </ul>
       <div class="pt-3 border-top border-secondary">
@@ -1067,6 +1071,68 @@
 
   <!-- Custom Main JS -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Google reviews carousel -->
+  <script>
+    (function () {
+      var track = document.getElementById('grTrack');
+      if (!track) return;
+      var root = track.closest('.gr-carousel');
+      var prev = root.querySelector('.gr-prev'), next = root.querySelector('.gr-next');
+      var dotsWrap = document.getElementById('grDots');
+      var cards = Array.prototype.slice.call(track.children);
+
+      function step() { var c = cards[0]; return c ? c.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 20) : 300; }
+      function pages() { return Math.max(1, Math.round((track.scrollWidth - track.clientWidth) / step()) + 1); }
+      function current() { return Math.round(track.scrollLeft / step()); }
+
+      function buildDots() {
+        dotsWrap.innerHTML = '';
+        for (var i = 0; i < pages(); i++) dotsWrap.appendChild(document.createElement('span'));
+        update();
+      }
+      function update() {
+        var max = track.scrollWidth - track.clientWidth - 4;
+        prev.disabled = track.scrollLeft <= 4;
+        next.disabled = track.scrollLeft >= max;
+        var idx = current();
+        Array.prototype.forEach.call(dotsWrap.children, function (d, i) { d.classList.toggle('is-active', i === idx); });
+      }
+      prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+      next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+      track.addEventListener('scroll', function () { window.requestAnimationFrame(update); }, { passive: true });
+      window.addEventListener('resize', function () { buildDots(); checkMore(); });
+
+      // Read more: only show when the text is clamped
+      function checkMore() {
+        cards.forEach(function (card) {
+          var t = card.querySelector('.gr-text'), b = card.querySelector('.gr-more');
+          if (!t || !b || card.classList.contains('is-open')) return;
+          b.hidden = t.scrollHeight <= t.clientHeight + 2;
+        });
+      }
+      cards.forEach(function (card) {
+        var b = card.querySelector('.gr-more');
+        if (b) b.addEventListener('click', function () {
+          var open = card.classList.toggle('is-open');
+          b.textContent = open ? 'Show less' : 'Read more';
+        });
+      });
+
+      // Gentle autoplay, paused on hover / touch
+      var paused = false;
+      root.addEventListener('mouseenter', function () { paused = true; });
+      root.addEventListener('mouseleave', function () { paused = false; });
+      track.addEventListener('touchstart', function () { paused = true; }, { passive: true });
+      setInterval(function () {
+        if (paused || document.hidden) return;
+        if (track.scrollLeft >= track.scrollWidth - track.clientWidth - 4) track.scrollTo({ left: 0, behavior: 'smooth' });
+        else track.scrollBy({ left: step(), behavior: 'smooth' });
+      }, 5000);
+
+      buildDots(); checkMore();
+    })();
+  </script>
 </body>
 
 </html>

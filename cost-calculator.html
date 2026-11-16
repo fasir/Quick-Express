@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Setup Cost Calculator | Quick Express Business Solutions - Dubai</title>
+  <meta name="description"
+    content="Calculate the cost of setting up your company in Dubai &amp; the UAE. Instant estimate for Mainland, Freezone and Industrial licences, visas, office and add-on services from Quick Express.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons & Font Awesome 6.5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="ap-body">
+
+  <!-- ================= TOP UTILITY BAR ================= -->
+  <div class="ap-topbar d-none d-lg-block">
+    <div class="container d-flex align-items-center justify-content-between">
+      <span><i class="bi bi-geo-alt"></i> Office #312, Shaikh Mahra Building, Al Twar, Al Qusais, Dubai, UAE</span>
+      <div class="d-flex align-items-center gap-4">
+        <a href="mailto:info@quickexpress.ae"><i class="bi bi-envelope"></i> info@quickexpress.ae</a>
+        <a href="tel:+97143346911"><i class="bi bi-telephone"></i> 04 3346 911</a>
+        <a href="tel:+971509605770"><i class="bi bi-phone"></i> 00971 509 605 770</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= STICKY WHITE HEADER ================= -->
+  <header class="ap-header" id="apHeader">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="ap-logo">
+        <img src="assets/images/logo-darck.png" alt="Quick Express">
+      </a>
+
+      <nav class="d-none d-lg-block" aria-label="Main navigation">
+        <ul class="ap-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="cost-calculator.html" class="active">Cost Calculator</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button class="ap-btn ap-btn-primary d-none d-sm-inline-flex" data-bs-toggle="modal"
+          data-bs-target="#consultationModal">
+          <i class="bi bi-calendar2-check"></i> Get Free Consultation
+        </button>
+        <button class="ap-burger d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenuOffcanvas" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= CALCULATOR BANNER ================= -->
+    <section class="sv-banner cc-banner">
+      <span class="sv-banner-grid" aria-hidden="true"></span>
+      <span class="sv-banner-ring" aria-hidden="true"></span>
+      <span class="sv-banner-glow" aria-hidden="true"></span>
+      <div class="container position-relative">
+        <nav aria-label="breadcrumb">
+          <ol class="sv-banner-crumbs">
+            <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+            <li aria-current="page">Cost Calculator</li>
+          </ol>
+        </nav>
+        <span class="sv-banner-tag"><i class="bi bi-lightning-charge-fill"></i> Instant Estimate in 2 Minutes</span>
+        <h1 class="sv-banner-title">Business Setup <span>Cost Calculator</span></h1>
+        <p class="sv-banner-text">Choose your jurisdiction, activity, visas and office, and get an instant, transparent estimate for setting up your company in Dubai &amp; the UAE.</p>
+        <div class="cc-banner-points">
+          <span><i class="bi bi-check2-circle"></i> No hidden fees</span>
+          <span><i class="bi bi-check2-circle"></i> Government fees included</span>
+          <span><i class="bi bi-check2-circle"></i> Free expert review</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALCULATOR ================= -->
+    <section class="cc-section" id="calculator">
+      <div class="container">
+        <div class="cc-layout">
+
+          <!-- ===== Wizard ===== -->
+          <div class="cc-card" id="ccCard">
+
+            <!-- Mobile live total -->
+            <div class="cc-mini" aria-live="polite">
+              <span class="cc-mini-l"><i class="bi bi-calculator"></i><span><small id="ccMiniStep">Step 1 of 4</small>Estimated cost</span></span>
+              <strong>AED <b class="js-total">0</b></strong>
+            </div>
+
+            <!-- Stepper -->
+            <ol class="cc-steps" id="ccSteps">
+              <li class="is-active" data-step="1"><span><i class="bi bi-geo-alt"></i></span><em>Jurisdiction</em></li>
+              <li data-step="2"><span><i class="bi bi-briefcase"></i></span><em>Activity</em></li>
+              <li data-step="3"><span><i class="bi bi-sliders"></i></span><em>Setup Details</em></li>
+              <li data-step="4"><span><i class="bi bi-person-check"></i></span><em>Your Details</em></li>
+            </ol>
+            <div class="cc-progress"><span id="ccProgress" style="width:0"></span></div>
+
+            <form id="ccForm" novalidate>
+
+              <!-- STEP 1 : Jurisdiction -->
+              <fieldset class="cc-pane is-active" data-pane="1">
+                <legend class="cc-q"><small>Step 1 of 4</small>Where would you like to set up your company?</legend>
+                <p class="cc-hint">Each jurisdiction has different ownership rules, costs and trading rights. Not sure? Pick the closest match &mdash; our advisors will confirm.</p>
+                <div class="cc-juris" id="ccJuris"></div>
+                <p class="cc-error" data-error="1" hidden><i class="bi bi-exclamation-circle"></i> Please choose a jurisdiction to continue.</p>
+              </fieldset>
+
+              <!-- STEP 2 : Activity -->
+              <fieldset class="cc-pane" data-pane="2">
+                <legend class="cc-q"><small>Step 2 of 4</small>What will your business do?</legend>
+                <p class="cc-hint">Select your main business activity. Some activities need extra approvals from authorities, which is reflected in your estimate.</p>
+                <div class="cc-acts" id="ccActs"></div>
+                <div class="cc-other" id="ccOtherWrap" hidden>
+                  <label for="ccOther">Describe your activity</label>
+                  <input type="text" id="ccOther" class="cc-input" placeholder="e.g. Interior design, cosmetics trading, logistics...">
+                </div>
+                <p class="cc-error" data-error="2" hidden><i class="bi bi-exclamation-circle"></i> Please choose your business activity.</p>
+              </fieldset>
+
+              <!-- STEP 3 : Setup details -->
+              <fieldset class="cc-pane" data-pane="3">
+                <legend class="cc-q"><small>Step 3 of 4</small>Tell us about your setup</legend>
+
+                <div class="cc-block">
+                  <h4 class="cc-label"><i class="bi bi-building"></i> Office type</h4>
+                  <div class="cc-office" id="ccOffice"></div>
+                </div>
+
+                <div class="cc-row2">
+                  <div class="cc-block">
+                    <h4 class="cc-label"><i class="bi bi-passport"></i> Residence visas</h4>
+                    <div class="cc-stepper" data-field="visas" data-min="0" data-max="10">
+                      <button type="button" class="cc-minus" aria-label="Fewer visas"><i class="bi bi-dash-lg"></i></button>
+                      <output>0</output>
+                      <button type="button" class="cc-plus" aria-label="More visas"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <small class="cc-sub">Investor, partner &amp; employee visas</small>
+                  </div>
+                  <div class="cc-block">
+                    <h4 class="cc-label"><i class="bi bi-people"></i> Shareholders</h4>
+                    <div class="cc-stepper" data-field="shareholders" data-min="1" data-max="10">
+                      <button type="button" class="cc-minus" aria-label="Fewer shareholders"><i class="bi bi-dash-lg"></i></button>
+                      <output>1</output>
+                      <button type="button" class="cc-plus" aria-label="More shareholders"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <small class="cc-sub">Individuals or corporate owners</small>
+                  </div>
+                </div>
+
+                <div class="cc-block">
+                  <h4 class="cc-label"><i class="bi bi-calendar3"></i> Licence duration</h4>
+                  <div class="cc-seg" id="ccYears"></div>
+                </div>
+
+                <div class="cc-block">
+                  <h4 class="cc-label"><i class="bi bi-stars"></i> Add-on services <span class="cc-opt">Optional</span></h4>
+                  <div class="cc-addons" id="ccAddons"></div>
+                </div>
+              </fieldset>
+
+              <!-- STEP 4 : Contact -->
+              <fieldset class="cc-pane" data-pane="4">
+                <legend class="cc-q"><small>Step 4 of 4</small>Where should we send your estimate?</legend>
+                <p class="cc-hint">Get your detailed cost breakdown instantly. An advisor can review it with you for free &mdash; no obligation.</p>
+                <div class="cc-fields">
+                  <div class="cc-field">
+                    <label for="ccName">Full name <i>*</i></label>
+                    <div class="cc-ic"><i class="bi bi-person"></i><input type="text" id="ccName" class="cc-input" placeholder="Your full name" autocomplete="name" required></div>
+                  </div>
+                  <div class="cc-field">
+                    <label for="ccPhone">Phone / WhatsApp <i>*</i></label>
+                    <div class="cc-ic"><i class="bi bi-telephone"></i><input type="tel" id="ccPhone" class="cc-input" placeholder="+971 50 000 0000" autocomplete="tel" required></div>
+                  </div>
+                  <div class="cc-field">
+                    <label for="ccEmail">Email address</label>
+                    <div class="cc-ic"><i class="bi bi-envelope"></i><input type="email" id="ccEmail" class="cc-input" placeholder="you@company.com" autocomplete="email"></div>
+                  </div>
+                  <div class="cc-field">
+                    <label for="ccNation">Nationality</label>
+                    <div class="cc-ic"><i class="bi bi-globe2"></i>
+                      <select id="ccNation" class="cc-input">
+                        <option value="">Select nationality</option>
+                        <option>United Arab Emirates</option><option>India</option><option>Pakistan</option><option>Bangladesh</option>
+                        <option>Sri Lanka</option><option>Philippines</option><option>Egypt</option><option>Jordan</option>
+                        <option>Lebanon</option><option>Saudi Arabia</option><option>United Kingdom</option><option>United States</option>
+                        <option>Russia</option><option>China</option><option>Nigeria</option><option>Kenya</option>
+                        <option>Iran</option><option>Turkey</option><option>Germany</option><option>France</option><option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="cc-block mt-3">
+                  <h4 class="cc-label"><i class="bi bi-clock-history"></i> When do you plan to start?</h4>
+                  <div class="cc-seg cc-seg-sm" id="ccStart"></div>
+                </div>
+                <p class="cc-error" data-error="4" hidden><i class="bi bi-exclamation-circle"></i> Please enter your name and a valid phone number.</p>
+                <p class="cc-privacy"><i class="bi bi-shield-lock"></i> Your details are kept private and only used to prepare your quote.</p>
+              </fieldset>
+
+              <!-- Nav -->
+              <div class="cc-nav">
+                <button type="button" class="cc-back" id="ccBack" hidden><i class="bi bi-arrow-left"></i> Back</button>
+                <button type="button" class="cc-next" id="ccNext">Continue <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </form>
+
+            <!-- RESULT -->
+            <div class="cc-result" id="ccResult" hidden>
+              <div class="cc-result-head">
+                <span class="cc-result-ico"><i class="bi bi-patch-check-fill"></i></span>
+                <div>
+                  <small>Your estimate is ready</small>
+                  <h2 id="ccHello">Here's your setup cost</h2>
+                </div>
+              </div>
+
+              <div class="cc-range">
+                <span>Estimated total</span>
+                <strong>AED <b id="ccMin">0</b> <em>&ndash;</em> <b id="ccMax">0</b></strong>
+                <small id="ccRangeNote">for a 1-year licence</small>
+              </div>
+
+              <div class="cc-break">
+                <h3>Cost breakdown</h3>
+                <ul id="ccBreak"></ul>
+                <div class="cc-break-total"><span>Estimated total</span><strong>AED <b id="ccBreakTotal">0</b></strong></div>
+              </div>
+
+              <div class="cc-incl">
+                <h3>Included in your setup</h3>
+                <ul id="ccIncl"></ul>
+              </div>
+
+              <div class="cc-actions">
+                <a href="#" target="_blank" rel="noopener" class="cc-act cc-act-wa" id="ccWa"><i class="bi bi-whatsapp"></i> Send Quote on WhatsApp</a>
+                <button type="button" class="cc-act cc-act-gold" data-bs-toggle="modal" data-bs-target="#consultationModal"><i class="bi bi-calendar2-check"></i> Book Free Consultation</button>
+                <button type="button" class="cc-act cc-act-ghost" id="ccPrint"><i class="bi bi-printer"></i> Print / Save PDF</button>
+                <button type="button" class="cc-act cc-act-ghost" id="ccRestart"><i class="bi bi-arrow-counterclockwise"></i> Recalculate</button>
+              </div>
+              <p class="cc-disclaimer"><i class="bi bi-info-circle"></i> This is an indicative estimate based on standard government and service fees. Final pricing depends on the authority, activity approvals and current fee schedules. A Quick Express advisor will confirm your exact quote.</p>
+            </div>
+          </div>
+
+          <!-- ===== Live summary ===== -->
+          <aside class="cc-summary">
+            <div class="cc-sum-card">
+              <div class="cc-sum-top">
+                <span class="cc-sum-label"><i class="bi bi-calculator"></i> Live Estimate</span>
+                <span class="cc-sum-step" id="ccSumStep">Step 1/4</span>
+              </div>
+              <div class="cc-sum-price" aria-live="polite">
+                <small>Starting from</small>
+                <strong>AED <b class="js-total">0</b></strong>
+                <span id="ccSumYears">1-year licence</span>
+              </div>
+              <ul class="cc-sum-list" id="ccSumList">
+                <li><i class="bi bi-geo-alt"></i><span>Jurisdiction</span><b data-sum="juris">&mdash;</b></li>
+                <li><i class="bi bi-briefcase"></i><span>Activity</span><b data-sum="activity">&mdash;</b></li>
+                <li><i class="bi bi-building"></i><span>Office</span><b data-sum="office">&mdash;</b></li>
+                <li><i class="bi bi-passport"></i><span>Visas</span><b data-sum="visas">0</b></li>
+                <li><i class="bi bi-people"></i><span>Shareholders</span><b data-sum="shareholders">1</b></li>
+                <li><i class="bi bi-stars"></i><span>Add-ons</span><b data-sum="addons">None</b></li>
+              </ul>
+              <p class="cc-sum-note"><i class="bi bi-shield-check"></i> Includes licence, registration &amp; government fees</p>
+            </div>
+
+            <div class="cc-help">
+              <span class="cc-help-ico"><i class="bi bi-headset"></i></span>
+              <div>
+                <strong>Need help choosing?</strong>
+                <p>Talk to a business setup advisor now.</p>
+                <div class="cc-help-links">
+                  <a href="tel:+97143346911"><i class="bi bi-telephone-fill"></i> 04 3346 911</a>
+                  <a href="https://wa.me/971509605770" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALCULATOR OFFER (10%) ================= -->
+    <!-- Countdown end date: set data-end="YYYY-MM-DDTHH:MM:SS+04:00" (UAE time). Leave empty = end of the current month. -->
+    <section class="co-section" id="calcOffer" data-end="">
+      <span class="co-grid" aria-hidden="true"></span>
+      <span class="co-orb co-orb-1" aria-hidden="true"></span>
+      <span class="co-orb co-orb-2" aria-hidden="true"></span>
+      <div class="container position-relative">
+        <div class="co-head" data-aos="fade-up">
+          <span class="co-pill"><i class="bi bi-stars"></i> Exclusive Online Offer</span>
+          <h2 class="co-title">Calculate &amp; Save <span>10%</span></h2>
+          <p class="co-lead">Use our online cost calculator today and receive an instant discount on your business setup package with Quick Express.</p>
+        </div>
+
+        <div class="co-layout">
+          <!-- Offer card -->
+          <article class="co-card co-offer" data-aos="fade-right">
+            <span class="co-eyebrow">Exclusive calculator user offer</span>
+            <h3>Instant <span>10%</span> Discount</h3>
+            <p>Available for a limited time on selected new UAE company registrations made through our online calculator.</p>
+            <ul class="co-list">
+              <li><span><i class="bi bi-buildings"></i></span>Valid for Mainland &amp; Freezone setups</li>
+              <li><span><i class="bi bi-patch-plus"></i></span>New company registrations only</li>
+              <li><span><i class="bi bi-file-earmark-check"></i></span>Includes licence, visa &amp; documents</li>
+              <li><span><i class="bi bi-calculator"></i></span>Exclusive to calculator users</li>
+            </ul>
+            <div class="co-claim">
+              <span class="co-claim-label">How to claim</span>
+              <ol>
+                <li><b>1</b>Calculate your cost</li>
+                <li><b>2</b>Send us your quote</li>
+                <li><b>3</b>Get 10% off</li>
+              </ol>
+            </div>
+            <div class="co-actions">
+              <a href="#calculator" class="co-btn co-btn-gold">Calculate My Savings <i class="bi bi-arrow-up-right"></i></a>
+              <a href="https://wa.me/971509605770?text=Hello%20Quick%20Express%2C%20I%27d%20like%20to%20claim%20the%2010%25%20calculator%20offer." target="_blank" rel="noopener" class="co-btn co-btn-glass"><i class="bi bi-whatsapp"></i> Claim on WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- Countdown card -->
+          <article class="co-card co-timer" data-aos="fade-left">
+            <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+              <defs>
+                <linearGradient id="coGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#3fe3b5" />
+                  <stop offset="100%" stop-color="#f6c446" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="co-timer-top">
+              <span class="co-live"><i></i> Limited time</span>
+              <span class="co-ends" id="coEnds"><i class="bi bi-calendar-event"></i> Offer ends soon</span>
+            </div>
+            <h3>Offer Expires In</h3>
+            <p>Don't miss your chance to save on your UAE business setup.</p>
+
+            <div class="co-rings" id="coCount" aria-live="polite">
+              <div class="co-ring" data-ring="d">
+                <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="co-ring-bg" cx="50" cy="50" r="44" /><circle class="co-ring-fg" cx="50" cy="50" r="44" /></svg>
+                <div class="co-ring-val"><b data-u="d">00</b><small>Days</small></div>
+              </div>
+              <div class="co-ring" data-ring="h">
+                <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="co-ring-bg" cx="50" cy="50" r="44" /><circle class="co-ring-fg" cx="50" cy="50" r="44" /></svg>
+                <div class="co-ring-val"><b data-u="h">00</b><small>Hours</small></div>
+              </div>
+              <div class="co-ring" data-ring="m">
+                <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="co-ring-bg" cx="50" cy="50" r="44" /><circle class="co-ring-fg" cx="50" cy="50" r="44" /></svg>
+                <div class="co-ring-val"><b data-u="m">00</b><small>Minutes</small></div>
+              </div>
+              <div class="co-ring" data-ring="s">
+                <svg viewBox="0 0 100 100" aria-hidden="true"><circle class="co-ring-bg" cx="50" cy="50" r="44" /><circle class="co-ring-fg" cx="50" cy="50" r="44" /></svg>
+                <div class="co-ring-val"><b data-u="s">00</b><small>Seconds</small></div>
+              </div>
+            </div>
+
+            <div class="co-bar-wrap">
+              <div class="co-bar-top"><span>Offer time remaining</span><b id="coPct">&ndash;</b></div>
+              <div class="co-bar"><span id="coBar"></span></div>
+            </div>
+
+            <div class="co-trust">
+              <span><i class="bi bi-shield-check"></i> No hidden fees</span>
+              <span><i class="bi bi-lightning-charge"></i> Fast approval</span>
+              <span><i class="bi bi-headset"></i> Free advisor</span>
+            </div>
+          </article>
+        </div>
+        <p class="co-terms"><i class="bi bi-info-circle"></i> Discount applies to Quick Express service fees on eligible new registrations. Government fees are excluded. Terms apply.</p>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="cc-how">
+      <div class="container">
+        <div class="cc-head" data-aos="fade-up">
+          <span class="cc-eyebrow">How It Works</span>
+          <h2>From estimate to licence in <span>4 simple steps</span></h2>
+        </div>
+        <div class="cc-how-grid">
+          <article class="cc-how-card" data-aos="fade-up"><b>01</b><span><i class="bi bi-calculator"></i></span><h3>Calculate</h3><p>Use the calculator to get an instant estimate for your company setup.</p></article>
+          <article class="cc-how-card" data-aos="fade-up" data-aos-delay="80"><b>02</b><span><i class="bi bi-chat-dots"></i></span><h3>Consult</h3><p>A dedicated advisor reviews your plan and confirms the best jurisdiction and activity.</p></article>
+          <article class="cc-how-card" data-aos="fade-up" data-aos-delay="160"><b>03</b><span><i class="bi bi-file-earmark-check"></i></span><h3>Documents</h3><p>We prepare your trade name, initial approval, MOA and all licence paperwork.</p></article>
+          <article class="cc-how-card" data-aos="fade-up" data-aos-delay="240"><b>04</b><span><i class="bi bi-award"></i></span><h3>Launch</h3><p>Receive your licence, visas, Emirates ID and bank account support &mdash; ready to trade.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY + FAQ ================= -->
+    <section class="cc-faqwrap">
+      <div class="container">
+        <div class="cc-faq-layout">
+          <div class="cc-why" data-aos="fade-right">
+            <span class="cc-eyebrow">Why Quick Express</span>
+            <h2>Transparent pricing. <span>Expert guidance.</span></h2>
+            <p>We help entrepreneurs and companies set up in Dubai with clear costs and end-to-end support &mdash; from licensing and visas to tax registration and banking.</p>
+            <ul class="cc-why-list">
+              <li><span><i class="bi bi-cash-coin"></i></span><div><strong>No hidden charges</strong>Every government and service fee shown upfront.</div></li>
+              <li><span><i class="bi bi-person-badge"></i></span><div><strong>Dedicated advisor</strong>One point of contact from start to finish.</div></li>
+              <li><span><i class="bi bi-lightning-charge"></i></span><div><strong>Fast processing</strong>Quick approvals with experienced PRO support.</div></li>
+              <li><span><i class="bi bi-shield-check"></i></span><div><strong>Fully compliant</strong>VAT, corporate tax and renewals handled for you.</div></li>
+            </ul>
+          </div>
+
+          <div class="cc-faq" data-aos="fade-left">
+            <div class="accordion" id="ccFaq">
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ccf1">How accurate is the cost calculator?</button></h3>
+                <div id="ccf1" class="accordion-collapse collapse show" data-bs-parent="#ccFaq"><div class="accordion-body">The calculator uses standard government and service fees to give an indicative range. Your final quote depends on the exact activity, authority and current fee schedules &mdash; an advisor will confirm it with you at no cost.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ccf2">What is the difference between Mainland and Freezone?</button></h3>
+                <div id="ccf2" class="accordion-collapse collapse" data-bs-parent="#ccFaq"><div class="accordion-body">A Mainland company can trade anywhere in the UAE and work with government entities. A Freezone company offers simple setup and lower starting costs, and is ideal for consultancies, e-commerce and international trade.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ccf3">How long does company formation take?</button></h3>
+                <div id="ccf3" class="accordion-collapse collapse" data-bs-parent="#ccFaq"><div class="accordion-body">Most licences are issued within a few working days once documents are complete. Visas, Emirates ID and bank account opening follow after the licence is issued.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ccf4">Do I need a physical office?</button></h3>
+                <div id="ccf4" class="accordion-collapse collapse" data-bs-parent="#ccFaq"><div class="accordion-body">Not always. Many activities can start with a virtual office or flexi desk. Some activities and higher visa quotas require a physical office &mdash; we will advise you on the most cost-effective option.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ccf5">Can you help with VAT, corporate tax and bank accounts?</button></h3>
+                <div id="ccf5" class="accordion-collapse collapse" data-bs-parent="#ccFaq"><div class="accordion-body">Yes. Quick Express handles VAT and corporate tax registration, accounting and bookkeeping, PRO services and corporate bank account assistance &mdash; add them in Step 3 to include them in your estimate.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA band -->
+        <div class="cc-cta" data-aos="fade-up">
+          <div>
+            <h2>Prefer to talk it through?</h2>
+            <p>Get a free 30-minute consultation with a Quick Express business setup advisor.</p>
+          </div>
+          <div class="cc-cta-btns">
+            <button class="cc-act cc-act-gold" data-bs-toggle="modal" data-bs-target="#consultationModal"><i class="bi bi-calendar2-check"></i> Book Free Consultation</button>
+            <a href="tel:+97143346911" class="cc-act cc-act-light"><i class="bi bi-telephone"></i> 04 3346 911</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (same as home page) ================= -->
+  <footer class="curved-modern-footer mt-5">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6">
+        <img src="assets/images/logo-darck.png" alt="Quick Express Logo" class="footer-logo mb-3">
+        <p class="footer-desc">
+          Quick Express Business Solutions is a premier corporate advisory and company formation consultancy based in
+          Al Twar, Al Qusais, Dubai, UAE.
+        </p>
+      
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h4 class="footer-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="offers.html">Packages</a></li>
+          <li><a href="blog.html">Blog Guides</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-details.html?type=mainland">Mainland Company Setup</a></li>
+          <li><a href="service-details.html?type=freezone">Free Zone Incorporation</a></li>
+          <li><a href="service-details.html?type=tax">Corporate Tax & VAT 9%</a></li>
+          <li><a href="service-details.html?type=accounting">Accounting & Auditing</a></li>
+          <li><a href="service-details.html?type=banking">Corporate Bank Account</a></li>
+          <li><a href="service-details.html?type=pro">PRO & Golden Visas</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Headquarters</h4>
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt-fill text-info"></i>
+          <div>Office #312, Shaikh Mahra Building<br>Al Twar, Al Qusais, Dubai, UAE</div>
+        </div>
+        <a href="tel:+97143346911" class="footer-contact-item">
+          <i class="bi bi-telephone-fill text-info"></i>
+          <span>04 3346 911</span>
+        </a>
+        <a href="tel:+971509605770" class="footer-contact-item">
+          <i class="bi bi-phone-fill text-info"></i>
+          <span>00971509605770</span>
+        </a>
+        <a href="https://wa.me/971509605770" class="footer-contact-item" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+          <i class="bi bi-whatsapp text-info"></i>
+          <span>00971509605770</span>
+        </a>
+        <a href="mailto:info@quickexpress.ae" class="footer-contact-item">
+          <i class="bi bi-envelope-fill text-info"></i>
+          <span>info@quickexpress.ae</span>
+        </a>
+
+        <form class="footer-newsletter-input qe-ajax-form mt-3">
+          <input type="email" class="form-control" placeholder="Enter work email" required>
+          <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i
+              class="bi bi-arrow-right"></i></button>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      &copy; 2026 Quick Express Business Solutions. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- ================= WHATSAPP CHAT WIDGET ================= -->
+  <button class="wa-floating-btn" id="waToggleBtn" aria-label="Chat with Quick Express on WhatsApp">
+    <div class="wa-pulse"></div>
+    <i class="fab fa-whatsapp"></i>
+  </button>
+
+  <div class="wa-chat-window" id="waChatWindow">
+    <div class="wa-header">
+      <div class="wa-header-agent">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=80"
+          alt="Consultant" class="wa-avatar">
+        <div>
+          <div class="wa-agent-title">Quick Express Support</div>
+          <div class="wa-agent-status"><span class="wa-status-dot"></span> Online | Senior Advisor</div>
+        </div>
+      </div>
+      <button class="wa-close-btn" id="waCloseBtn" aria-label="Close Chat Window"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="wa-body">
+      <div class="wa-bubble">
+        <p class="mb-1">Hello! Welcome to <strong>Quick Express Business Solutions</strong>.</p>
+        <p class="mb-0">How can we assist you with your UAE company formation, taxes, or visa needs today?</p>
+        <div class="wa-bubble-time">Just now</div>
+      </div>
+      <div class="wa-quick-options">
+        <div class="wa-opt-chip" data-query="Hi, I would like to inquire about Dubai Free Zone setup."><i class="bi bi-globe2"></i> Free Zone Setup Package</div>
+        <div class="wa-opt-chip" data-query="Hello, I want to form a Mainland company in Dubai with 100% ownership."><i class="bi bi-building"></i> Mainland (DED) License</div>
+        <div class="wa-opt-chip" data-query="Hi, I need assistance with UAE Corporate Tax 9% and VAT."><i class="bi bi-calculator"></i> Corporate Tax &amp; VAT Support</div>
+        <div class="wa-opt-chip" data-query="Hello, can you help me open a Corporate Bank Account in the UAE?"><i class="bi bi-bank"></i> Corporate Bank Account</div>
+      </div>
+    </div>
+    <div class="wa-footer">
+      <div class="input-group mb-2">
+        <input type="text" id="waCustomMsg" class="form-control form-control-sm" placeholder="Type your inquiry...">
+      </div>
+      <button class="wa-start-chat-btn" id="waStartChatBtn"><i class="fab fa-whatsapp"></i> Chat on WhatsApp Now</button>
+    </div>
+  </div>
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- ================= CONSULTATION MODAL ================= -->
+  <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header bg-gradient-teal text-white p-4">
+          <h5 class="modal-title fw-bold" id="consultationModalLabel"><i class="bi bi-calendar2-check me-2"></i> Get Free Consultation</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form class="qe-ajax-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Full Name *</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Email Address *</label>
+                <input type="email" class="form-control" placeholder="you@company.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Phone / WhatsApp Number *</label>
+                <input type="tel" class="form-control" placeholder="+971 50 123 4567" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-semibold">Service</label>
+                <select class="form-select" id="modalServiceSelect">
+                  <option value="mainland">New Company Formation &amp; License Renewal</option>
+                  <option value="sponsorship">Local Sponsorship Services</option>
+                  <option value="office">Private office for Rent in Dubai, UAE</option>
+                  <option value="virtual">Virtual Office, EJARI &amp; ESTIDAMA Services</option>
+                  <option value="pro">VISA Services</option>
+                  <option value="tax">VAT Registration &amp; Corporate Tax Registration</option>
+                  <option value="banking">Bank Account Opening</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-semibold">Message</label>
+                <textarea class="form-control" id="modalNotes" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="mt-4 text-end">
+              <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary px-4"><i class="bi bi-send-fill me-1"></i> Get in Touch</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MOBILE NAVIGATION OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-end ap-offcanvas" tabindex="-1" id="mobileMenuOffcanvas" aria-label="Mobile menu">
+    <div class="offcanvas-header">
+      <img src="assets/images/logo-darck.png" alt="Quick Express" style="height: 40px;">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="ap-mnav">
+        <li><a href="index.html">Home <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="about.html">About Us <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="services.html">Services <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="blog.html">Blog <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="offers.html">Offers <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="cost-calculator.html" class="active">Cost Calculator <i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="contact.html">Contact Us <i class="bi bi-chevron-right"></i></a></li>
+      </ul>
+      <button class="ap-btn ap-btn-primary w-100 justify-content-center mb-2" data-bs-toggle="modal"
+        data-bs-target="#consultationModal" data-bs-dismiss="offcanvas">Get Free Consultation</button>
+      <a href="tel:+97143346911" class="ap-btn ap-btn-outline w-100 justify-content-center"><i class="bi bi-telephone"></i> Call Now</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom Main JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Sticky header shadow on scroll (About page)
+    (function () {
+      var header = document.getElementById('apHeader');
+      if (!header) return;
+      var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 20); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+
+  <!-- Cost calculator -->
+  <script src="assets/js/calculator.js"></script>
+</body>
+
+</html>

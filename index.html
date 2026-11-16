@@ -1123,12 +1123,14 @@
       var paused = false;
       root.addEventListener('mouseenter', function () { paused = true; });
       root.addEventListener('mouseleave', function () { paused = false; });
-      track.addEventListener('touchstart', function () { paused = true; }, { passive: true });
+      var resumeT;
+      track.addEventListener('touchstart', function () { paused = true; clearTimeout(resumeT); }, { passive: true });
+      track.addEventListener('touchend', function () { clearTimeout(resumeT); resumeT = setTimeout(function () { paused = false; }, 3500); }, { passive: true });
       setInterval(function () {
         if (paused || document.hidden) return;
         if (track.scrollLeft >= track.scrollWidth - track.clientWidth - 4) track.scrollTo({ left: 0, behavior: 'smooth' });
         else track.scrollBy({ left: step(), behavior: 'smooth' });
-      }, 5000);
+      }, 4000);
 
       buildDots(); checkMore();
     })();

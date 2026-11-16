@@ -8083,3 +8083,12 @@ select.cc-input { appearance: none; -webkit-appearance: none; background-image: 
 .hx-hero { padding-top: var(--hx-nav-h, 88px); }
 /* Fixed home navbar must stay above page content (it lives inside the hero's stacking context) */
 .hx-hero { position: relative; z-index: 1030; }
+
+/* Google reviews — mobile: exactly one full card per view, smooth auto slide */
+@media (max-width: 767.98px) {
+  .gr-track { grid-auto-columns: 100%; gap: 16px; padding: 8px 0 18px; scroll-snap-type: x mandatory; scroll-padding: 0; }
+  .gr-card { scroll-snap-align: center; scroll-snap-stop: always; }
+  .gr-carousel { padding-bottom: 30px; }
+  .gr-dots span { width: 8px; height: 8px; }
+  .gr-dots span.is-active { width: 26px; }
+}
